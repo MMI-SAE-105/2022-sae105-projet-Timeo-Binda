@@ -1,1 +1,132 @@
-Autres projets FR 
+<!DOCTYPE html>
+<html lang="fr"x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" href="public/img/icones/Logo reverse footage Noir.svg">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <style>
+      .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #fff;
+        display: grid;
+        place-content: center;
+      }
+      .header__menuBtn {
+        position: relative;
+        z-index: 10;
+      }
+    </style>
+</head>
+<body>
+     
+    <header>
+        
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
+        class="header__menuBtn">
+            <img src="public/img/icones/Menu V2.svg" alt="icone Menu">
+        </button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms
+
+        class="menu">
+            <img src="public/img/icones/Cross V2.svg" alt="">
+            <ul>
+                <li><a href="CortlandtAlley.html"><img src="public/img/icones/Location.svg" alt="Icone Location">Cortland Alley</a></li>
+                <li><a href="StarWars.html"><img src="public/img/icones/Book.svg" alt="Icone livre">Star Wars</a></li>
+                <li><a href="BohemianRhapsody.html"><img src="public/img/icones/Music.svg" alt="Icone Music">Bohemian Rhapsody</a></li>
+                <li><a href="InglouriousBasterds.html"><img src="public/img/icones/Film.svg" alt="cone film">Inglourious Basterds</a></li>
+                <li><a href="Technologies.html"><img src="public/img/icones/icons8-doigts-croisés-100-modified 1.svg" alt="Icone doigts croisés">Technologies</a></li>
+                <li><a href="MortDuCinema.html"><img src="public/img/icones/icons8-afraid-100-modified 1.svg" alt="icone effrayé">La Mort du Cinéma ?</a></li>
+            </ul>
+            <ul>
+                <li><a href="index.html"><img src="public/img/icones/Home.svg" alt="Icone accueil">Accueil</a></li>
+                <li><a href="AutresProjets.html"><img src="public/img/icones/people.svg" alt="icones personnes">Autres Projets</a></li>
+                <li><a href="Contact.html"><img src="public/img/icones/Letter.svg" alt="icone lettre">Contact</a></li>
+                <li><a href="Glossaire.html"><img src="public/img/icones/Glossaire.svg" alt="Icone Glossaire">Glossaire</a></li>
+            </ul>
+        </nav>
+
+
+        <a href="/">
+            <img src="public/img/icones/Logo reverse footage.svg" alt="Logo Reverse Footage">
+        </a>
+
+
+        <a href="En_Accueil.html">
+            <img src="public/img/icones/Langue=Francais.svg" alt="Icone langue Fr">
+        </a>
+    </header>
+
+    
+    <main>
+        <h1>
+            Autres Projets
+        </h1>
+        <p>
+            Trouvez ci-dessous les autres projets du groupe de TP A1. 
+        </p>
+        <ul>
+            <a href="">
+                <li></li>
+            </a>
+            <a href="">
+                <li></li>
+            </a>
+            <a href="">
+                <li></li>
+            </a>
+            <a href="">
+                <li></li>
+            </a>
+            <a href="">
+                <li></li>
+            </a>
+            <a href="">
+                <li></li>
+            </a>
+            <a href="">
+                <li></li>
+            </a>
+            <a href="">
+                <li></li>
+            </a>
+            <a href="">
+                <li></li>
+            </a>
+            <a href="">
+                <li></li>
+            </a>
+            <a href="">
+                <li></li>
+            </a>
+            <a href="">
+                <li></li>
+            </a>
+            <a href="">
+                <li></li>
+            </a>
+      
+        </ul>
+    </main>
+    
+    <footer>
+        Contact <a href="mailto:etudiant.tbinda@gmail.com">etudiant.tbinda@gmail.com</a>
+        <p>
+            Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de montbéliard. 
+        </p>
+        <p>
+            Timéo BINDA - TDA1
+        </p>
+        <img src="public/img/icones/logo_mmi negatif.svg" alt="Logo MMI Montbéliard">
+
+        
+    </footer>
+     
+</body>
+</html>
