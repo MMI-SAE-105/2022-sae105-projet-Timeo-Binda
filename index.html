@@ -1,19 +1,38 @@
 <!DOCTYPE html>
-<html lang="en,fr">
+<html lang="en,fr"x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reverse Footage</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <style>
+      .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #fff;
+        display: grid;
+        place-content: center;
+      }
+      .header__menuBtn {
+        position: relative;
+        z-index: 10;
+      }
+    </style>
 </head>
 <body>
      
     <header>
         
-        <button>
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
+        class="header__menuBtn">
             <img src="public/img/icones/Menu V2.svg" alt="icone Menu">
         </button>
-        <nav>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms
+        class="menu">
             <img src="public/img/icones/Cross V2.svg" alt="">
             <ul>
                 <li><a href="CortlandtAlley.html"><img src="public/img/icones/Location.svg" alt="Icone Location">Cortland Alley</a></li>
