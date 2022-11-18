@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" href="/logo_reverse_footage_noir.2ab65ceb.svg">
+    <script defer="" src="https://unpkg.com/alpinejs"></script>
+    <style>.menu {
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  place-content: center;
+  display: grid;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.header__menuBtn {
+  z-index: 10;
+  position: relative;
+}
+
+</style>
+</head>
+<body>
+     
+    <header>
+        
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+            <img src="/menu.3523d358.svg" alt="icone Menu">
+        </button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms="" class="menu">
+            <img src="/cross.3ee29302.svg" alt="">
+            <ul>
+                <li><a href="/CortlandtAlley.html"><img src="/location.32c6d7a0.svg" alt="Icone Location">Cortland Alley</a></li>
+                <li><a href="/StarWars.html"><img src="/book.36429e05.svg" alt="Icone livre">Star Wars</a></li>
+                <li><a href="/BohemianRhapsody.html"><img src="/music.f7f70117.svg" alt="Icone Music">Bohemian Rhapsody</a></li>
+                <li><a href="/InglouriousBasterds.html"><img src="/film.724322b6.svg" alt="cone film">Inglourious Basterds</a></li>
+                <li><a href="/Technologies.html"><img src="/finger_crossed.f3132f7e.svg" alt="Icone doigts croisés">Technologies</a></li>
+                <li><a href="/MortDuCinema.html"><img src="/afraid.dc9cbe66.svg" alt="icone effrayé">La Mort du Cinéma ?</a></li>
+            </ul>
+            <ul>
+                <li><a href="/index.html"><img src="/home.fadbadf4.svg" alt="Icone accueil">Accueil</a></li>
+                <li><a href="/AutresProjets.html"><img src="/people.89689dc5.svg" alt="icones personnes">Autres Projets</a></li>
+                <li><a href="/Contact.html"><img src="/contact.c5d1f59a.svg" alt="icone lettre">Contact</a></li>
+                <li><a href="/Glossaire.html"><img src="/glossaire.4dd66e6a.svg" alt="Icone Glossaire">Glossaire</a></li>
+            </ul>
+        </nav>
+
+
+        <a href="/">
+            <img src="/logo_site_header.58605798.svg" alt="Logo_Reverse_Footage">
+        </a>
+
+
+        <a href="/En_Accueil.html">
+            <img src="/langue_francais.778c61e7.svg" alt="Icone langue Fr">
+        </a>
+    </header>
+
+    
+    <main>
+        <h1>
+            Contactez-nous !
+        </h1>
+        <p>
+            Pour toutes informations ou recommandation, n’hésitez pas à nous écrire, nous serons ravis de vous lire.
+        </p>
+        <form action="#">
+            <div>
+                <label for="first-name">Votre Nom</label>
+                <input type="text" name="first-name" id="first-name" required="">
+            </div>
+            <div>
+                <label for="last-name">Votre Adresse Mail</label>
+                <input type="text" name="last-name" id="last-name" required="">
+            </div>
+            <div>
+                <label for="message">Votre Message</label>
+                <textarea name="message" id="message" rows="10" required=""></textarea>
+            </div>
+            <button type="submit">Envoyer</button>
+        </form>
+    </main>
+    
+    <footer>
+        Contact <a href="mailto:etudiant.tbinda@gmail.com">etudiant.tbinda@gmail.com</a>
+        <p>
+            Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de montbéliard. 
+        </p>
+        <p>
+            Timéo BINDA - TDA1
+        </p>
+        <img src="/logo_mmi_negatif.7fec2e32.svg" alt="Logo MMI Montbéliard">
+
+        
+    </footer>
+     
+<script src="/Contact.f4fb5dd4.js"></script></body>
+</html>
