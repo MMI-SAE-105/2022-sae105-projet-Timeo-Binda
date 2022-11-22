@@ -1,1 +1,148 @@
-Mort du cinéma FR 
+<!DOCTYPE html>
+<html lang="fr"x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La mort du Cinéma</title>
+    <link rel="icon" href="public/img/icones/logo_reverse_footage_noir.svg">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <style>
+      .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #fff;
+        display: grid;
+        place-content: center;
+      }
+      .header__menuBtn {
+        position: relative;
+        z-index: 10;
+      }
+    </style>
+</head>
+<body>
+     
+    <header>
+        
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
+        class="header__menuBtn">
+            <img src="public/img/icones/menu.svg" alt="icone Menu">
+        </button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms
+
+        class="menu">
+            <img src="public/img/icones/cross.svg" alt="">
+            <ul>
+                <li><a href="CortlandtAlley.html"><img src="public/img/icones/location.svg" alt="Icone Location">Cortland Alley</a></li>
+                <li><a href="StarWars.html"><img src="public/img/icones/book.svg" alt="Icone livre">Star Wars</a></li>
+                <li><a href="BohemianRhapsody.html"><img src="public/img/icones/music.svg" alt="Icone Music">Bohemian Rhapsody</a></li>
+                <li><a href="InglouriousBasterds.html"><img src="public/img/icones/film.svg" alt="cone film">Inglourious Basterds</a></li>
+                <li><a href="Technologies.html"><img src="public/img/icones/finger_crossed.svg" alt="Icone doigts croisés">Technologies</a></li>
+                <li><a href="MortDuCinema.html"><img src="public/img/icones/afraid.svg" alt="icone effrayé">La Mort du Cinéma ?</a></li>
+            </ul>
+            <ul>
+                <li><a href="index.html"><img src="public/img/icones/home.svg" alt="Icone accueil">Accueil</a></li>
+                <li><a href="AutresProjets.html"><img src="public/img/icones/people.svg" alt="icones personnes">Autres Projets</a></li>
+                <li><a href="Contact.html"><img src="public/img/icones/contact.svg" alt="icone lettre">Contact</a></li>
+                <li><a href="Glossaire.html"><img src="public/img/icones/glossaire.svg" alt="Icone Glossaire">Glossaire</a></li>
+            </ul>
+        </nav>
+
+
+        <a href="/">
+            <img src="public/img/icones/logo_site_header.svg" alt="Logo_Reverse_Footage">
+        </a>
+
+
+        <a href="En_Accueil.html">
+            <img src="public/img/icones/langue_francais.svg" alt="Icone langue Fr">
+        </a>
+    </header>
+
+    
+    <main>
+        <img src="public/img/Photos/La Mort du ciné/popcorn_renverse.webp" alt="Pop corn renversé">
+        <h2>
+            Crainte
+        </h2>
+        <img src="public/img/icones/traits_article.svg" alt="traits">
+        <h1>
+            La Mort du Cinéma
+        </h1>
+
+        <p>
+            Pour commencer je citerais l’inventeur du cinéma, Louis Lumière, qui peu après leur première, annonca:  “Le cinéma est une invention sans avenir”. Le cinema a en effet été remis en question de nombreuses fois, et encore de nos jours, au XXI siècle.
+
+        </p>
+
+        <h3>
+            Pas la première mort
+        </h3>
+
+        <p>
+            En 1927, plusieurs critiques de cinéma clament sa mort, suite à son évolution, le rendant sonore. “Le cinématographe des frères lumière ne mérite plus son nom… Il est devenu un vulgaire phonographe à image.” 
+            Aussi, après la seconde guerre mondiale, l’industrie cinématographique, qui fut pourtant la seconde plus importante française, risque de s’écrouler. L’Etat français taxe de manière trop conséquente les producteurs, ce qui les rend parfois difficilement viables.  
+        </p>
+
+        <p>
+            De nos jours, ce sont principalement 2 causes qui peuvent nous laisser croire à une mort imminente du cinéma.
+        </p>
+
+        <h3>
+            Adieu la Caméra 
+        </h3>
+
+        <p>
+            Premièrement, beaucoup de productions s’allègent. Si auparavant, il fallait plusieurs millions de dollars pour tourner un film à succès avec des équipements très onéreux. Aujourd'hui, de plus en plus de réalisateurs essaient de changer leurs méthodes de travail, en utilisant des caméras très spécifiques, que beaucoup d’entre nous possèdent déjà, les Iphones. C’est là le paradoxe, pour des films grand écran, des réalisateurs utilisent des caméras, enfin des smartphones, c’est à dire un outil qui n’est pas fait pour filmer. Certains sont plutôt performants dans ce domaine, mais ce n’est pas leur fonction première.   
+        </p>
+
+        <p>
+            Le réalisateur Steven Soderbergh est un pionnier de ce domaine. Sa place n’est plus à prouver dans le milieu, il est le réalisateur de la trilogie Ocean, avec Matt Damon et George Clooney. Il à déjà réalisé 3 films avec un Iphone. C’est donc le genre de réalisateur qui s’intéresse plus à l’histoire raconté, qu’avec quel matériel elle est captée.
+
+        </p>
+
+        <img src="public/img/Photos/La Mort du ciné/film_iphone.webp" alt="Fond vert">
+
+        <h4>
+            Le Réalisateur Steven Soderbergh filmant son film “High Flying Bird” avec un Iphone 
+        </h4>
+
+        <p>
+            Bien sûr, ce ne sont pas les caméras chères qui font qu’un film est notable ou non, mais cependant, elles participent au look de ce dernier. Et le public recherche tout de même une professionnalisation du film en se rendant au cinéma. Si le spectateur peut recréer lui-même le film, le cinéma professionnel n’a plus d'intérêt. 
+        </p>
+
+
+
+        <h3>
+            Bonjour Netflix
+        </h3>
+
+        <p>
+            D'autre part, nous assistons à un changement de mode de consommation des films. De nos jours, les spectateurs ne se rendent plus, ou moins dans les salles aux fauteuils rouges, mais regardent les films depuis chez eux, sur des plateformes de streaming comme Netflix. Certains films ne sortent même plus au cinéma, mais directement sur Netflix. Néanmoins, cette consommation va peut-être impacter les salles de cinéma mais en rien la qualité du film. 
+        </p>
+
+        <p>
+            Nous constatons donc, que le cinéma ne va peut-être pas mourir, mais il va bien changer. Les films ne seront plus tournés à la RED Monstro, mais simplement à l’Iphone. Ils seront regardés sur un écran plat, plutôt qu’un écran géant. Je n’espère qu’une chose, qu’il nous transmettre encore des émotions. 
+        </p>
+
+
+       
+    </main>
+    
+    <footer>
+        Contact <a href="mailto:etudiant.tbinda@gmail.com">etudiant.tbinda@gmail.com</a>
+        <p>
+            Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de montbéliard. 
+        </p>
+        <p>
+            Timéo BINDA - TDA1
+        </p>
+        <img src="public/img/icones/logo_mmi_negatif.svg" alt="Logo MMI Montbéliard">
+    </footer>
+     
+</body>
+</html>

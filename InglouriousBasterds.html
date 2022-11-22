@@ -1,1 +1,155 @@
-Inglourious basterds FR 
+<!DOCTYPE html>
+<html lang="fr"x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inglourious Basterds</title>
+    <link rel="icon" href="public/img/icones/logo_reverse_footage_noir.svg">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <style>
+      .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #fff;
+        display: grid;
+        place-content: center;
+      }
+      .header__menuBtn {
+        position: relative;
+        z-index: 10;
+      }
+    </style>
+</head>
+<body>
+     
+    <header>
+        
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
+        class="header__menuBtn">
+            <img src="public/img/icones/menu.svg" alt="icone Menu">
+        </button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms
+
+        class="menu">
+            <img src="public/img/icones/cross.svg" alt="">
+            <ul>
+                <li><a href="CortlandtAlley.html"><img src="public/img/icones/location.svg" alt="Icone Location">Cortland Alley</a></li>
+                <li><a href="StarWars.html"><img src="public/img/icones/book.svg" alt="Icone livre">Star Wars</a></li>
+                <li><a href="BohemianRhapsody.html"><img src="public/img/icones/music.svg" alt="Icone Music">Bohemian Rhapsody</a></li>
+                <li><a href="InglouriousBasterds.html"><img src="public/img/icones/film.svg" alt="cone film">Inglourious Basterds</a></li>
+                <li><a href="Technologies.html"><img src="public/img/icones/finger_crossed.svg" alt="Icone doigts croisés">Technologies</a></li>
+                <li><a href="MortDuCinema.html"><img src="public/img/icones/afraid.svg" alt="icone effrayé">La Mort du Cinéma ?</a></li>
+            </ul>
+            <ul>
+                <li><a href="index.html"><img src="public/img/icones/home.svg" alt="Icone accueil">Accueil</a></li>
+                <li><a href="AutresProjets.html"><img src="public/img/icones/people.svg" alt="icones personnes">Autres Projets</a></li>
+                <li><a href="Contact.html"><img src="public/img/icones/contact.svg" alt="icone lettre">Contact</a></li>
+                <li><a href="Glossaire.html"><img src="public/img/icones/glossaire.svg" alt="Icone Glossaire">Glossaire</a></li>
+            </ul>
+        </nav>
+
+
+        <a href="/">
+            <img src="public/img/icones/logo_site_header.svg" alt="Logo_Reverse_Footage">
+        </a>
+
+
+        <a href="En_Accueil.html">
+            <img src="public/img/icones/langue_francais.svg" alt="Icone langue Fr">
+        </a>
+    </header>
+
+    
+    <main>
+        <img src="public/img/Photos/Inglourious Basterds/inglourious_basterds_characters.webp" alt="personnages film">
+        <h2>
+            Crainte
+        </h2>
+        <img src="public/img/icones/traits_article.svg" alt="traits">
+        <h1>
+            La Mort du Cinéma
+        </h1>
+
+        <p>
+            Inglourious Basterds est le 7 film du réalisateur Quentin Tarantino. Sorti en 2009, il est un succès commercial et critique. L’histoire se déroule pendant la seconde guerre mondiale et raconte la mise en place de 2 actions parallèles pour mettre fin au 3eme Reich. 
+
+        </p>
+
+        <h3>
+            Synopsis
+        </h3>
+
+        <p>
+            En 1941, dans la France occupée, un colonel SS et ses hommes sont à la recherche de juifs dans une ferme familiale. Le colonel Landa réussit à faire avouer au chef de famille qu’il cache des juifs sous son plancher. Il ordonne alors à ses soldats de tirer à travers le plancher, tuant tous ceux se trouvant en dessous. Une fille Soshanna parvient néanmoins à s’échapper. 
+            En parallèle, le lieutenant Américain Aldo Raine monte une équipe de soldats dans le but de se rendre en France pour effrayer les nazis en les scalpant et les tuant. 
+            Nous retrouvons plus tard Shoshanna, gérante d’un cinéma parisien, sous un nom d’emprunt. Elle apprend que son cinéma va accueillir la première d’un film de propagande et que de nombreux dirigeants nazis seront présents. Elle va profiter de cette occasion pour venger sa famille. 
+            Son but est de rajouter une séquence dans le film, un message de vengeance, puis de faire brûler le cinéma, avec les nazis enfermés dedans. 
+
+        </p>
+
+
+        <img src="public/img/Photos/Inglourious Basterds/cinema_fire.webp" alt="cinéma en feu">
+
+        <h4>
+            Le cinéma en feu
+        </h4>
+
+        <p>
+            Pendant ce temps, Aldo raine et ses soldats sont missionnés pour attaquer eux aussi la première du film. Ils prévoient de se fondre dans les invités et de faire exploser le cinéma, grâce à des explosifs à la cheville. 
+            Les deux missions sont achevées avec de nombreux retournements de situation.  
+        </p>
+
+
+
+        <h3>
+            Succès
+        </h3>
+
+        <p>
+            Le succès de ce film se trouve dans la réalisation et les dialogues, typiques de Tarantino, provoquant des moments de suspens insoutenables. Le film a reçu de nombreuses récompenses, dont huit aux oscars (notamment “meilleur film”, “meilleur réalisateur” et “meilleur scénario”). L’acteur Christoph Waltz à quant à lui remporté l’oscar du meilleur acteur pour son rôle du colonel Landa. En effet, c’est l’un des personnages clé du film. Son charisme maîtrisé et son sadisme continu font de lui un des méchants les plus cultes du cinéma.
+        </p>
+
+        <img src="public/img/Photos/Inglourious Basterds/landa.webp" alt="Colonel Landa">
+
+        <h4>
+            Colonel Landa 
+        </h4>
+
+        <h3>
+            Recommandation
+        </h3>
+
+        <p>
+            Inglourious Basterds est selon moi, comme pour beaucoup, l’un des meilleurs films de Tarantino. Il est parmi les films à voir absolument et aura pour sûr, marqué ce début des années 2000.
+            Je vous conseille, par ailleurs, d’autres films du même réalisateur, eux aussi pépites du cinéma.
+        </p>
+
+        <h3>
+            Du même réalisateur
+        </h3>
+
+        <p>
+            #caroussel 
+        </p>
+
+
+       
+    </main>
+    
+    <footer>
+        Contact <a href="mailto:etudiant.tbinda@gmail.com">etudiant.tbinda@gmail.com</a>
+        <p>
+            Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de montbéliard. 
+        </p>
+        <p>
+            Timéo BINDA - TDA1
+        </p>
+        <img src="public/img/icones/logo_mmi_negatif.svg" alt="Logo MMI Montbéliard">
+    </footer>
+     
+</body>
+</html>
