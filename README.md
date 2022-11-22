@@ -1,6 +1,6 @@
 - NOM : BINDA
 - PRÉNOM : Timéo
-- URL du site :
+- URL du site : http://reversefootage.timeobinda.fr/
 - URL FIGMA :
 
 # Structure de départ pour le projet individuel.
