@@ -1,7 +1,22 @@
+.body{
+    background-color: #323232;
+}
+
+.h1{
+    color: #FFFFFF;
+}
+
+.h2{
+    color: #FFFFFF;
+}
+
+.p{
+    color: #FFFFFF;
+}
+
 .header{
     background-color: #161616;
     height: 73px;
-    width: 100%;
     position: relative;
     margin: 0px;
 }
@@ -31,6 +46,7 @@
 }
     
 .couv{
+    position: absolute;
     filter: grayscale(1);
     margin: 0px;
 }
@@ -47,11 +63,20 @@
 }
 
 .card{
+    width: 90%;
+    display: flex;
+    margin-bottom: 30px;
     justify-content: center;
-    border-color: black;
+    background-color: #161616;
+    border-radius: 5%;
+    border: 5px solid #AA0000;
 }
 .card__img{
     justify-content: center;
-    width: 80%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom: 5px solid #AA0000;
+    
+    width: 100%;
 }
 
