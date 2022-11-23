@@ -6,24 +6,23 @@
 }
 
 .header__menuBtn{
-    background-color: #161616;
+    background-color: hsl(0, 0%, 9%);
     position: absolute;
+    left: 2%;
     top: 15%;
-    
 }
 
 .couv__home{
     width: 100%;
 }
 .header__logo{
-    position: relative;
+    display: flex;
     justify-content: center;
-
 }
 
 .header__langue{
     position: absolute;
-
+    right: 2%;
     top: 20%;
 }
     
