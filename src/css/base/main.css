@@ -40,6 +40,7 @@
 
 
 .header__logo{
+    position: relative;
     display: flex;
     justify-content: center;
     margin: 0px;
