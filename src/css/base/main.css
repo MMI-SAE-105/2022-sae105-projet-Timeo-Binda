@@ -12,7 +12,9 @@
     
 }
 
-
+.couv__home{
+    width: 100%;
+}
 .header__logo{
     position: relative;
     justify-content: center;
@@ -21,7 +23,7 @@
 
 .header__langue{
     position: absolute;
-    
+
     top: 20%;
 }
     
@@ -42,9 +44,10 @@
 
 .card{
     justify-content: center;
+    border-color: black;
 }
 .card__img{
-    margin: auto;
+    justify-content: center;
     width: 80%;
 }
 
