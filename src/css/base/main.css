@@ -1,3 +1,50 @@
-.h1{
-background-color: brown;
+.header{
+    background-color: #161616;
+    height: 73px;
+    width: 100%;
+    position: relative;
 }
+
+.header__menuBtn{
+    background-color: #161616;
+    position: absolute;
+    top: 15%;
+    
+}
+
+
+.header__logo{
+    position: relative;
+    justify-content: center;
+
+}
+
+.header__langue{
+    position: absolute;
+    
+    top: 20%;
+}
+    
+.couv{
+    filter: grayscale(1);
+}
+
+.menu{
+    background-color: #323232;
+}
+
+.menu__item{
+    background-color: #161616;
+    border-radius: 5%;
+    list-style-type: none;              
+    
+}
+
+.card{
+    justify-content: center;
+}
+.card__img{
+    margin: auto;
+    width: 80%;
+}
+
