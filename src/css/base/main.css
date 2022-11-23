@@ -10,6 +10,7 @@
     position: absolute;
     left: 2%;
     top: 15%;
+    margin: 0;
 }
 
 .couv__home{
@@ -24,6 +25,7 @@
     position: absolute;
     right: 2%;
     top: 20%;
+    margin: 0;
 }
     
 .couv{
