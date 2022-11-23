@@ -1,0 +1,14 @@
+:root {/* Color styles */
+--tonic-color: rgba(170, 0, 0, 1);
+--main-color: rgba(50, 50, 50, 1);
+--menu-color: rgba(22, 22, 22, 1);
+--text-color: rgba(255, 255, 255, 1);
+
+/* Text-size styles */
+--heading-1: 30px;
+--heading-2: 21px;
+--body-1: 16px;
+--body-2: 20px;
+--body-3: 10px;
+--body-4: 13px;
+}
