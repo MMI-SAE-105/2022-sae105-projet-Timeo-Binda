@@ -4,14 +4,20 @@
 
 .h1{
     color: #FFFFFF;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .h2{
     color: #FFFFFF;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .p{
     color: #FFFFFF;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .header{
@@ -67,18 +73,37 @@
 .card{
     width: 90%;
     display: flex;
-    margin-bottom: 30px;
     justify-content: center;
+    margin-bottom: 30px;
+    margin-left: 5%;
     background-color: #161616;
     border-radius: 5%;
-    border: 5px solid #AA0000;
+    border: 2px solid #AA0000;
 }
 .card__img{
     justify-content: center;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
-    border-bottom: 5px solid #AA0000;
-    
+    border-bottom: 2px solid #AA0000;
     width: 100%;
+}
+
+.card__title{
+    color: #FFFFFF;
+    margin: 0%;
+    top: 5%;
+    margin-left: 3%;
+    width: 90%;
+    text-decoration: none;
+}
+
+.card__description{
+    margin: 0%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color: #FFFFFF;
+    margin-left: 3%;
+    width: 90%;
+    text-decoration: none;
 }
 
