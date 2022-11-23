@@ -23,15 +23,13 @@
 
 .header__menuBtn{
     background-color: hsl(0, 0%, 9%);
-    position: absolute;
+    position: relative;
     left: 2%;
     top: 15%;
     margin: 0px;
 }
 
-.couv__home{
-    width: 100%;
-}
+
 .header__logo{
     display: flex;
     justify-content: center;
@@ -44,7 +42,11 @@
     top: 20%;
     margin: 0px;
 }
-    
+
+.couv__home{
+    width: 100%;
+}    
+
 .couv{
     position: absolute;
     filter: grayscale(1);
