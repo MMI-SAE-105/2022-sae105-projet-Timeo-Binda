@@ -23,7 +23,7 @@
 
 .header__menuBtn{
     background-color: hsl(0, 0%, 9%);
-    position: relative;
+    position: absolute;
     left: 2%;
     top: 15%;
     margin: 0px;
