@@ -3,6 +3,7 @@
     height: 73px;
     width: 100%;
     position: relative;
+    margin: 0px;
 }
 
 .header__menuBtn{
@@ -10,7 +11,7 @@
     position: absolute;
     left: 2%;
     top: 15%;
-    margin: 0;
+    margin: 0px;
 }
 
 .couv__home{
@@ -19,17 +20,19 @@
 .header__logo{
     display: flex;
     justify-content: center;
+    margin: 0px;
 }
 
 .header__langue{
     position: absolute;
     right: 2%;
     top: 20%;
-    margin: 0;
+    margin: 0px;
 }
     
 .couv{
     filter: grayscale(1);
+    margin: 0px;
 }
 
 .menu{
