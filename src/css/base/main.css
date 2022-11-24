@@ -1,11 +1,40 @@
-.body{
-    background-color: #323232;
+.cross{
+    position: absolute;
+    right: 10%;
+    top: 2%;
 }
+
+.menu{
+    background-color: #323232;
+   
+    
+}
+
+.menu__item{
+    background-color: #161616;
+    list-style-type: none;
+    border-radius: 8%;
+    margin: 5%;
+    text-decoration:  none;              
+    
+}
+
+.body{
+    background-color: #161616;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+    color:var(--text-color);
+    text-decoration: none;
+}
+
 
 .h1{
     color: #FFFFFF;
     margin-left: 5%;
     margin-right: 5%;
+    size: var(--heading-1);
 }
 
 .h2{
@@ -24,14 +53,14 @@
 }
 
 .header{
-    background-color: #161616;
+    background-color: var(--menu-color);
     height: 73px;
     position: relative;
     margin: 0px;
 }
 
 .header__menuBtn{
-    background-color: hsl(0, 0%, 9%);
+    background: none;
     position: absolute;
     left: 2%;
     top: 15%;
@@ -63,16 +92,7 @@
     margin: 0px;
 }
 
-.menu{
-    background-color: #323232;
-}
 
-.menu__item{
-    background-color: #161616;
-    border-radius: 5%;
-    text-decoration:  none;              
-    
-}
 
 .card{
     width: 90%;
@@ -86,6 +106,9 @@
 }
 .card__img{
     justify-content: center;
+    object-fit: cover;
+    height: 323px;
+    width: 298px;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
     border-bottom: 2px solid #AA0000;
@@ -93,12 +116,13 @@
 }
 
 .card__title{
+    text-decoration: none;
     color: #FFFFFF;
     margin: 0%;
     top: 5%;
     margin-left: 3%;
     width: 90%;
-    text-decoration: none;
+    
 }
 
 .card__description{
@@ -113,5 +137,25 @@
 
 .footer {
     background-color: #161616;
+}
+
+
+
+.footer__contact{
+    color: #FFFFFF;
+}
+
+.footer__explication{
+    color: #FFFFFF;
+}
+
+.footer__nom{
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.footer__logommi{
+    position: absolute;
+    right: 2%;  
 }
 
