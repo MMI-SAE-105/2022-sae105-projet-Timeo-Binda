@@ -15,9 +15,22 @@
     background-color: var(--menu-color);
     list-style-type: none;
     border-radius: 8%;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+                  
     
-    text-decoration:  none;              
+}
+
+.menu__other {
+    column-count: 2;
+}
+.menu__item--other{
     
+    width: 80%;
+    text-align: center;
+
 }
 
 .body{
