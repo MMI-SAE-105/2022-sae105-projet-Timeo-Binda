@@ -4,6 +4,10 @@
     top: 2%;
 }
 
+.header__menuBtn{
+    border-style: none;
+}
+
 .menu{
     background-color: var(--main-color);
     z-index: 2;
@@ -153,6 +157,7 @@ a:-webkit-any-link {
 
 .footer {
     background-color: var(--menu-color);
+    right: 10%;
 }
 
 
