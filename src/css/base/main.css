@@ -70,6 +70,7 @@ a:-webkit-any-link {
 
 .header{
     background-color: var(--menu-color);
+    text-align: center;
     height: 73px;
     position: relative;
     padding: 0;
@@ -85,12 +86,7 @@ a:-webkit-any-link {
 }
 
 
-.header__logo{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin: 0px;
-}
+
 
 .header__langue{
     position: absolute;
