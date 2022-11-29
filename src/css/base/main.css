@@ -104,8 +104,6 @@ a:-webkit-any-link {
     margin: 0px;
 }
 
-
-
 .card{
     width: 90%;
     display: flex;
@@ -116,6 +114,7 @@ a:-webkit-any-link {
     border-radius: 5%;
     border: 2px solid var(--tonic-color);
 }
+
 .card__img{
     justify-content: center;
     object-fit: cover;
@@ -152,8 +151,6 @@ a:-webkit-any-link {
     right: 10%;
 }
 
-
-
 .footer__contact{
     color: var(--text-color);
 }
@@ -168,7 +165,9 @@ a:-webkit-any-link {
 }
 
 .footer__logommi{
-    position: absolute;
-    right: 2%;  
+    display: block;
+    position: relative;
+    left: 85%;
+    margin: 2%;
 }
 
