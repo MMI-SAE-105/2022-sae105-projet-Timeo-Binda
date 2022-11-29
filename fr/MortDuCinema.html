@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La mort du Cinéma</title>
-    <link rel="icon" href="public/img/icones/logo_reverse_footage_noir.svg">
+    <link rel="icon" href="../public/img/icones/logo_reverse_footage_noir.svg">
     <script defer src="https://unpkg.com/alpinejs"></script>
     <style>
       .menu {
@@ -26,7 +26,7 @@
 </head>
 <body>
      
-    <header>
+    <header class="header">
         
         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
         class="header__menuBtn">
@@ -35,30 +35,30 @@
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms
 
         class="menu">
-            <img src="public/img/icones/cross.svg" alt="">
-            <ul>
-                <li><a href="CortlandtAlley.html"><img src="public/img/icones/location.svg" alt="Icone Location">Cortland Alley</a></li>
-                <li><a href="StarWars.html"><img src="public/img/icones/book.svg" alt="Icone livre">Star Wars</a></li>
-                <li><a href="BohemianRhapsody.html"><img src="public/img/icones/music.svg" alt="Icone Music">Bohemian Rhapsody</a></li>
-                <li><a href="InglouriousBasterds.html"><img src="public/img/icones/film.svg" alt="cone film">Inglourious Basterds</a></li>
-                <li><a href="Technologies.html"><img src="public/img/icones/finger_crossed.svg" alt="Icone doigts croisés">Technologies</a></li>
-                <li><a href="MortDuCinema.html"><img src="public/img/icones/afraid.svg" alt="icone effrayé">La Mort du Cinéma ?</a></li>
+            <img class="cross" src="../public/img/icones/cross.svg" alt="croix">
+            <ul class="menu__articles">
+                <li class="menu__item"><a href="/fr/CortlandtAlley.html"><img src="../public/img/icones/location.svg" alt="Icone Location">Cortland Alley</a></li>
+                <li class="menu__item"><a href="/fr/StarWars.html"><img src="public/img/icones/book.svg" alt="Icone livre">Star Wars</a></li>
+                <li class="menu__item"><a href="/fr/BohemianRhapsody.html"><img src="public/img/icones/music.svg" alt="Icone Music">Bohemian Rhapsody</a></li>
+                <li class="menu__item"><a href="/fr/InglouriousBasterds.html"><img src="public/img/icones/film.svg" alt="cone film">Inglourious Basterds</a></li>
+                <li class="menu__item"><a href="/fr/Technologies.html"><img src="public/img/icones/finger_crossed.svg" alt="Icone doigts croisés">Technologies</a></li>
+                <li class="menu__item"><a href="/fr/MortDuCinema.html"><img src="public/img/icones/afraid.svg" alt="icone effrayé">La Mort du Cinéma ?</a></li>
             </ul>
-            <ul>
-                <li><a href="index.html"><img src="public/img/icones/home.svg" alt="Icone accueil">Accueil</a></li>
-                <li><a href="AutresProjets.html"><img src="public/img/icones/people.svg" alt="icones personnes">Autres Projets</a></li>
-                <li><a href="Contact.html"><img src="public/img/icones/contact.svg" alt="icone lettre">Contact</a></li>
-                <li><a href="Glossaire.html"><img src="public/img/icones/glossaire.svg" alt="Icone Glossaire">Glossaire</a></li>
+            <ul class="menu__other">
+                <li class="menu__item menu__item--other"><a href="index.html"><img src="public/img/icones/home.svg" alt="Icone accueil">Accueil</a></li>
+                <li class="menu__item menu__item--other"><a href="/fr/AutresProjets.html"><img src="public/img/icones/people.svg" alt="icones personnes">Autres Projets</a></li>
+                <li class="menu__item menu__item--other"><a href="/fr/Contact.html"><img src="public/img/icones/contact.svg" alt="icone lettre">Contact</a></li>
+                <li class="menu__item menu__item--other"><a href="/fr/Glossaire.html"><img src="public/img/icones/glossaire.svg" alt="Icone Glossaire">Glossaire</a></li>
             </ul>
         </nav>
 
 
-        <a href="/">
-            <img src="public/img/icones/logo_site_header.svg" alt="Logo_Reverse_Footage">
+        <a class="header__logo" href="/">
+            <img src="../public/img/icones/logo_site_header.svg" alt="Logo_Reverse_Footage">
         </a>
 
 
-        <a href="En_Accueil.html">
+        <a class="header__langue" href="en/En_Accueil.html">
             <img src="public/img/icones/langue_francais.svg" alt="Icone langue Fr">
         </a>
     </header>

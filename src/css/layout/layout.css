@@ -1,0 +1,68 @@
+.header{
+    background-color: var(--menu-color);
+    top: 2%;
+    text-align: center;
+    height: 73px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+
+.header__menuBtn{
+    background: none;
+    border-style: none;
+    position: absolute;
+    left: 2%;
+    top: 15%;
+    margin: 0px;
+}
+
+
+.header__langue{
+    position: absolute;
+    right: 2%;
+    top: 20%;
+    margin: 0px;
+}
+
+
+
+
+.footer {
+    display: block;
+    background-color: var(--menu-color);
+    
+}
+
+.footer__contact{
+    padding-top: 10%;
+    color: var(--text-color);
+    margin: 5%;
+}
+
+.footer__mail{
+    margin: 0;
+    text-decoration: underline;
+
+}
+
+.footer__explication{
+    color: var(--text-color);
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.footer__nom{
+    text-align: center;
+    color: var(--text-color);
+    
+}
+
+.footer__logommi{
+    position: relative;
+    padding-bottom: 2%;
+    padding-right: 2%;
+    display: flex;
+    justify-content: end;
+}
