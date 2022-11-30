@@ -12,7 +12,7 @@
 .header__menuBtn{
     background: none;
     border-style: none;
-    position: absolute;
+    display: flex;
     left: 2%;
     top: 15%;
     margin: 0px;
