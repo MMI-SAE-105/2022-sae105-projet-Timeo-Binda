@@ -1,6 +1,5 @@
 .header__div{
     background-color: var(--menu-color);
-    
     height: 73px;
     display: flex;
     justify-content: space-between;
@@ -12,11 +11,12 @@
     border-style: none;
     padding-left: 10px;
     width: 89px;
+    z-index: 2;
 }
 
 .header__logo{
    margin-top: 10%;
-   z-index: 2;
+   z-index: 3;
 }
 
 .header__langue {
@@ -49,16 +49,17 @@
     margin-right: 5%;
 }
 
+.footer__bottom{
+    background-color: tomato;
+    display:inline;
+}
 .footer__nom{
-    text-align: center;
+    align-items: center;
     color: var(--text-color);
-    
 }
 
 .footer__logommi{
-    position: relative;
+    
     padding-bottom: 2%;
     padding-right: 2%;
-    display: flex;
-    justify-content: end;
 }

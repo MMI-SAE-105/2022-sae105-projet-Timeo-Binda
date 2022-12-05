@@ -24,6 +24,10 @@
         z-index: 10;
       }
     </style>
+    <link href="https://unpkg.com/cloudinary-video-player@1.9.4/dist/cld-video-player.min.css" 
+    rel="stylesheet">
+<script src="https://unpkg.com/cloudinary-video-player@1.9.4/dist/cld-video-player.min.js" 
+    type="text/javascript"></script>
 </head>
 <body>
      
@@ -31,47 +35,47 @@
         
         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
         class="header__menuBtn">
-            <img src="public/img/icones/menu.svg" alt="icone Menu">
+            <img src="../public/img/icones/menu.svg" alt="icone Menu">
         </button>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms
 
         class="menu">
-            <img src="public/img/icones/cross.svg" alt="">
+            <img src="../public/img/icones/cross.svg" alt="">
             <ul>
-                <li><a href="CortlandtAlley.html"><img src="public/img/icones/location.svg" alt="Icone Location">Cortland Alley</a></li>
-                <li><a href="StarWars.html"><img src="public/img/icones/book.svg" alt="Icone livre">Star Wars</a></li>
-                <li><a href="BohemianRhapsody.html"><img src="public/img/icones/music.svg" alt="Icone Music">Bohemian Rhapsody</a></li>
-                <li><a href="InglouriousBasterds.html"><img src="public/img/icones/film.svg" alt="cone film">Inglourious Basterds</a></li>
-                <li><a href="Technologies.html"><img src="public/img/icones/finger_crossed.svg" alt="Icone doigts croisés">Technologies</a></li>
-                <li><a href="MortDuCinema.html"><img src="public/img/icones/afraid.svg" alt="icone effrayé">La Mort du Cinéma ?</a></li>
+                <li><a href="CortlandtAlley.html"><img src="../public/img/icones/location.svg" alt="Icone Location">Cortland Alley</a></li>
+                <li><a href="StarWars.html"><img src="../public/img/icones/book.svg" alt="Icone livre">Star Wars</a></li>
+                <li><a href="BohemianRhapsody.html"><img src="../public/img/icones/music.svg" alt="Icone Music">Bohemian Rhapsody</a></li>
+                <li><a href="InglouriousBasterds.html"><img src="../public/img/icones/film.svg" alt="cone film">Inglourious Basterds</a></li>
+                <li><a href="Technologies.html"><img src="../public/img/icones/finger_crossed.svg" alt="Icone doigts croisés">Technologies</a></li>
+                <li><a href="MortDuCinema.html"><img src="../public/img/icones/afraid.svg" alt="icone effrayé">La Mort du Cinéma ?</a></li>
             </ul>
             <ul>
-                <li><a href="index.html"><img src="public/img/icones/home.svg" alt="Icone accueil">Accueil</a></li>
-                <li><a href="AutresProjets.html"><img src="public/img/icones/people.svg" alt="icones personnes">Autres Projets</a></li>
-                <li><a href="Contact.html"><img src="public/img/icones/contact.svg" alt="icone lettre">Contact</a></li>
-                <li><a href="Glossaire.html"><img src="public/img/icones/glossaire.svg" alt="Icone Glossaire">Glossaire</a></li>
+                <li><a href="index.html"><img src="../public/img/icones/home.svg" alt="Icone accueil">Accueil</a></li>
+                <li><a href="AutresProjets.html"><img src="../public/img/icones/people.svg" alt="icones personnes">Autres Projets</a></li>
+                <li><a href="Contact.html"><img src="../public/img/icones/contact.svg" alt="icone lettre">Contact</a></li>
+                <li><a href="Glossaire.html"><img src="../public/img/icones/glossaire.svg" alt="Icone Glossaire">Glossaire</a></li>
             </ul>
         </nav>
 
 
         <a href="/">
-            <img src="public/img/icones/logo_site_header.svg" alt="Logo_Reverse_Footage">
+            <img src="../public/img/icones/logo_site_header.svg" alt="Logo_Reverse_Footage">
         </a>
 
 
         <a href="En_Accueil.html">
-            <img src="public/img/icones/langue_francais.svg" alt="Icone langue Fr">
+            <img src="../public/img/icones/langue_francais.svg" alt="Icone langue Fr">
         </a>
     </header>
 
     
     <main>
         <section class="top">
-            <img src="public/img/Photos/Bohemian Rhapsody/bohemian_rhapsody_cover.webp" alt="Bohemian Rhapsody couverture">
+            <img src="../public/img/Photos/Bohemian Rhapsody/bohemian_rhapsody_cover.webp" alt="Bohemian Rhapsody couverture">
             <h2>
                 Musique
             </h2>
-            <img src="public/img/icones/traits_article.svg" alt="traits">
+            <img src="../public/img/icones/traits_article.svg" alt="traits">
             <h1>
                 Bohemian Rhapsody
             </h1>
@@ -106,7 +110,7 @@
             Un film retraçant la vie du chanteur, Freddie Mercury, à vue le jour en 2018 “Bohemian Rhapsody”. Nous retrouvons dans ce film toute la construction du groupe, à ses début, jusqu’à la fin de vie de Mercury. La chanson Bohemian Rhapsody est évidemment la bande originale du film. Nous la retrouvons d’ailleurs en entière à la fin du film, lors de la scène du concert pour le Live aid. La scénographie à été refaite à l’identique dans le film. 
         </p>
 
-        <img src="public/img/Photos/Bohemian Rhapsody/bohemian_rhapsody_poster.webp" alt="Affiche Bohemian Rhapsody">
+        <img src="../public/img/Photos/Bohemian Rhapsody/bohemian_rhapsody_poster.webp" alt="Affiche Bohemian Rhapsody">
 
         <h4>
             Affiche du film
@@ -120,6 +124,16 @@
             Lors de sa sortie, le titre est accompagné d’un clip musical. Un procédé qui était loin d’être démocratisé à l’époque. Cependant, le succès fulgurant du titre à poussé les labels musicaux à créer de plus en plus de clips pour les autres artistes. Cela permettait, entre autres, de faire la promotion d’une musique à la télévision, sans que les artistes soient présents en direct. Nous pouvons donc dire que la chanson a donc été une des pionnières dans le domaine.  Ce clip compte aujourd’hui 1,5 milliards de vues sur Youtube.
 
         </p>
+        
+        <video
+            width=400
+            height=200
+            id="example-player"
+            controls
+            muted
+            class="cld-video-player cld-video-player-skin-dark">
+        </video>
+        
 
         <h3>
             Récompenses
@@ -139,10 +153,17 @@
         <p>
             Timéo BINDA - TDA1
         </p>
-        <img src="public/img/icones/logo_mmi_negatif.svg" alt="Logo MMI Montbéliard">
+        <img src="../public/img/icones/logo_mmi_negatif.svg" alt="Logo MMI Montbéliard">
 
         
     </footer>
+
+        <script>
+            var cld = cloudinary.videoPlayer('example-player', { 
+                cloud_name: 'du356sfvl', //remplacer par votre id cloudinary 
+                sourceTypes: ['hls','dash','webm/vp9','mp4/h265','mp4']});
+            cld.source('https://res.cloudinary.com/du356sfvl/video/upload/v1669882876/Queen-bohemian_rhapsody_cpr2xv.mp4'); //à remplacer après avoir uploader une vidéo
+        </script>
      
 </body>
 </html>
