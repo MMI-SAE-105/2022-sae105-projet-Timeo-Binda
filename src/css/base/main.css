@@ -31,7 +31,10 @@ a:-webkit-any-link {
     font-size: var(--body-1);
 }
 
-
+.langue__titre{
+    color: var(--text-color);
+    text-align: center;
+}
 
 
 

@@ -19,3 +19,21 @@
     border: 2px solid var(--tonic-color);
     
 }
+
+.langue__logo{
+    text-align: center;
+    
+}
+
+.langue__picto{
+    margin: 5%;
+}
+.logo{
+    display: flex;
+    margin-top: 8%;
+    margin-inline: auto;
+    height: auto;
+    width: 50%;
+    border: 3px solid var(--tonic-color);
+    border-radius: 50%;
+}
