@@ -26,15 +26,18 @@
 
 
 .footer {
-    display: block;
+    display: flex;
+    flex-direction: column;
     background-color: var(--menu-color);
+    padding: 5%;
+    
     
 }
 
 .footer__contact{
-    padding-top: 10%;
+   
     color: var(--text-color);
-    margin: 5%;
+    
 }
 
 .footer__mail{
@@ -45,21 +48,16 @@
 
 .footer__explication{
     color: var(--text-color);
-    margin-left: 5%;
-    margin-right: 5%;
+    
 }
 
-.footer__bottom{
-    background-color: tomato;
-    display:inline;
-}
+
 .footer__nom{
-    align-items: center;
+    text-align: center;
     color: var(--text-color);
 }
 
 .footer__logommi{
-    
-    padding-bottom: 2%;
-    padding-right: 2%;
+    display: block;
+    text-align: right;
 }

@@ -1,7 +1,7 @@
 .body{
     background-color: var(--main-color);
     margin: 0;
-    max-width: 100%;
+    
 }
 
 a:-webkit-any-link {
