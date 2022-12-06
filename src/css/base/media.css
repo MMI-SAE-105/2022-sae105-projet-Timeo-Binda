@@ -7,11 +7,13 @@
 }    
 
 .lines{
+    background-color: none;
 
 }
 
 .img{
-    margin: auto;
+    
+    margin-inline: 10%;
     width: 80%;
     border-radius: 5%;
     border: 2px solid var(--tonic-color);
