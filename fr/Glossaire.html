@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr"x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen">
 <head>
+    <link rel="stylesheet" href="../src/css/style.css">
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glossaire</title>
-    <link rel="icon" href="public/img/icones/logo_reverse_footage_noir.svg">
+    <link rel="icon" href="../public/img/icones/logo_reverse_footage_noir.svg">
     <script defer src="https://unpkg.com/alpinejs"></script>
     <style>
       .menu {
@@ -17,58 +19,61 @@
         background: #fff;
         display: grid;
         place-content: center;
+        
       }
       .header__menuBtn {
         position: relative;
-        z-index: 10;
+        
       }
     </style>
 </head>
-<body>
+<body class="body">
      
-    <header>
+    <header class="header">
         
-        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
-        class="header__menuBtn">
-            <img src="../public/img/icones/menu.svg" alt="icone Menu">
-        </button>
-        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms
+        <div class="header__div">
+            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
+            class="header__menuBtn">
+                <img src="../public/img/icones/menu.svg" alt="icone Menu">
+            </button>
+            <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms
 
-        class="menu">
-            <img src="../public/img/icones/cross.svg" alt="">
-            <ul>
-                <li><a href="/fr/CortlandtAlley.html"><img src="../public/img/icones/location.svg" alt="Icone Location">Cortland Alley</a></li>
-                <li><a href="StarWars.html"><img src="../public/img/icones/book.svg" alt="Icone livre">Star Wars</a></li>
-                <li><a href="BohemianRhapsody.html"><img src="../public/img/icones/music.svg" alt="Icone Music">Bohemian Rhapsody</a></li>
-                <li><a href="InglouriousBasterds.html"><img src="../public/img/icones/film.svg" alt="cone film">Inglourious Basterds</a></li>
-                <li><a href="Technologies.html"><img src="../public/img/icones/finger_crossed.svg" alt="Icone doigts croisés">Technologies</a></li>
-                <li><a href="MortDuCinema.html"><img src="../public/img/icones/afraid.svg" alt="icone effrayé">La Mort du Cinéma ?</a></li>
-            </ul>
-            <ul>
-                <li><a href="index.html"><img src="../public/img/icones/home.svg" alt="Icone accueil">Accueil</a></li>
-                <li><a href="AutresProjets.html"><img src="../public/img/icones/people.svg" alt="icones personnes">Autres Projets</a></li>
-                <li><a href="Contact.html"><img src="../public/img/icones/contact.svg" alt="icone lettre">Contact</a></li>
-                <li><a href="Glossaire.html"><img src="../public/img/icones/glossaire.svg" alt="Icone Glossaire">Glossaire</a></li>
-            </ul>
-        </nav>
-
-
-        <a href="/">
-            <img src="../public/img/icones/logo_site_header.svg" alt="Logo Reverse Footage">
-        </a>
+            class="menu">
+                <img class="cross" src="../public/img/icones/cross.svg" alt="">
+                <ul class="menu__articles">
+                    <li class="menu__item"><a href="/fr/CortlandtAlley.html"><img src="../public/img/icones/location.svg" alt="Icone Location">Cortland Alley</a></li>
+                    <li class="menu__item"><a href="/fr/StarWars.html"><img src="../public/img/icones/book.svg" alt="Icone livre">Star Wars</a></li>
+                    <li class="menu__item"><a href="/fr/BohemianRhapsody.html"><img src="../public/img/icones/music.svg" alt="Icone Music">Bohemian Rhapsody</a></li>
+                    <li class="menu__item"><a href="/fr/InglouriousBasterds.html"><img src="../public/img/icones/film.svg" alt="cone film">Inglourious Basterds</a></li>
+                    <li class="menu__item"><a href="/fr/Technologies.html"><img src="../public/img/icones/finger_crossed.svg" alt="Icone doigts croisés">Technologies</a></li>
+                    <li class="menu__item"><a href="/fr/MortDuCinema.html"><img src="../public/img/icones/afraid.svg" alt="icone effrayé">La Mort du Cinéma ?</a></li>
+                </ul>
+                <ul class="menu__other">
+                    <li class="menu__item menu__item--other"><a href="index.html"><img src="../public/img/icones/home.svg" alt="Icone accueil">Accueil</a></li>
+                    <li class="menu__item menu__item--other"><a href="/fr/AutresProjets.html"><img src="../public/img/icones/people.svg" alt="icones personnes">Autres Projets</a></li>
+                    <li class="menu__item menu__item--other"><a href="/fr/Contact.html"><img src="../public/img/icones/contact.svg" alt="icone lettre">Contact</a></li>
+                    <li class="menu__item menu__item--other"><a href="/fr/Glossaire.html"><img src="../public/img/icones/glossaire.svg" alt="Icone Glossaire">Glossaire</a></li>
+                </ul>
+            </nav>
 
 
-        <a href="En_Accueil.html">
-            <img src="../public/img/icones/langue_francais.svg" alt="Icone langue Fr">
-        </a>
+            <a class="header__logo" href="/">
+                <img src="../public/img/icones/logo_site_header.svg" alt="Logo_Reverse_Footage">
+            </a>
+
+
+            <a class="header__langue" href="en/En_Accueil.html">
+                <img src="../public/img/icones/langue_francais.svg" alt="Icone langue Fr">
+            </a>
+        </div>
     </header>
 
     
     <main>
-        <h1>
+        <h1 class="h1">
             Glossaire
         </h1>
-        <p>
+        <p class="p">
             Trouvez dans cette page les définitions qu'il vous manque !
         </p>
         
@@ -90,17 +95,21 @@
         </dl>
     </main>
     
-    <footer>
-        Contact <a href="mailto:etudiant.tbinda@gmail.com">etudiant.tbinda@gmail.com</a>
-        <p>
+    <footer class="footer">
+        <a class="footer__mail" href="mailto:etudiant.tbinda@gmail.com"> <span class="footer__contact">Contact:</span> etudiant.tbinda@gmail.com</a> 
+
+        <p class="footer__explication">
             Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de montbéliard. 
         </p>
-        <p>
-            Timéo BINDA - TDA1
-        </p>
-        <img src="../public/img/icones/logo_mmi_negatif.svg" alt="Logo MMI Montbéliard">
-
-        
+        <div class="footer__bottom">
+            <p class="footer__nom">
+                Timéo BINDA - TDA1
+            </p>
+            
+            <a class="footer__logommi" href="http://mmimontbeliard.com/" target="_blank">
+                <img src="../public/img/icones/logo_mmi_negatif.svg" alt="Logo MMI Montbéliard">
+            </a>
+        </div>
     </footer>
      
 </body>

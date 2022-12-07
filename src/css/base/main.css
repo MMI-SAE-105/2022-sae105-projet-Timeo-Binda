@@ -16,6 +16,7 @@ a:-webkit-any-link {
     color: var(--text-color);
     margin-left: 5%;
     margin-right: 5%;
+    
     font-size: var(--heading-1);
 }
 
@@ -80,7 +81,7 @@ a:-webkit-any-link {
 }
 
 .text_area{
-    border-radius: 30%;
+    border-radius: 10px;
     width: 80%;
     height: 30%;
     background-color: var(--main-color);
@@ -114,8 +115,18 @@ a:-webkit-any-link {
     display: flex;
     flex-direction: column;
 }
-.liste__site{
-    
+
+dt {
+    color: var(--text-color);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+dd {
+    color: var(--text-color);
+    font-family: 'Rubik', sans-serif;
+    padding: 2%;
 }
 
 
