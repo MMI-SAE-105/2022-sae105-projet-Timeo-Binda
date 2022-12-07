@@ -10,6 +10,8 @@ a:-webkit-any-link {
     text-decoration: none;
 }
 
+
+
 .h1{
     color: var(--text-color);
     margin-left: 5%;
@@ -36,6 +38,67 @@ a:-webkit-any-link {
     text-align: center;
 }
 
+.label{
+    color: grey;
+    margin-inline: 10%;
+    font-family: 'Rubik', sans-serif;
+    font-size: var(--body-1);
+}
+
+.send{
+    margin-left: 125px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-style: none;
+    border-radius: 10px;
+    color: var(--text-color);
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: var(--tonic-color);
+    padding-inline: 3%;
+    cursor: pointer;
+}
+
+.send:hover {
+    
+    text-decoration: underline;
+}
+
+
+.input{
+    width: 80%;
+    height: 30%;
+    background-color: var(--main-color);
+    box-shadow: 2px 2px 2px black; ;
+    box-sizing: border-box;
+    border: 2px solid var(--tonic-color);
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-inline: 10%;
+}
+
+.text_area{
+    border-radius: 30%;
+    width: 80%;
+    height: 30%;
+    background-color: var(--main-color);
+    box-shadow: 2px 2px 2px black; ;
+    box-sizing: border-box;
+    border-radius: 1em;
+    border: 2px solid var(--tonic-color);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-inline: 10%;
+}
+
+.intro{
+    padding-top: 5%;
+    color: var(--text-color);
+    font-size: var(--heading-1);
+    margin: 0;
+}
 
 
 
