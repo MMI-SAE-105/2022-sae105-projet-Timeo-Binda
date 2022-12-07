@@ -1,3 +1,75 @@
+.nav-toggle{
+    
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.nav-toggle-bar,
+.nav-toggle-bar::before,
+.nav-toggle-bar::after{
+    content: '';
+    background-color: white;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    transition: all .4s ease-in-out;
+}
+
+.nav-toggle-bar::before{
+    
+    top: -10px;
+}
+
+.nav-toggle-bar::after{
+    top: 10px;
+}
+
+.menu-open .nav-toggle-bar{
+    transform: rotate(135deg);
+    background-color: white;
+}
+
+.menu-open .nav-toggle-bar::before,
+.menu-open .nav-toggle-bar::after{
+    transform: rotate(90deg);
+    background-color: white;
+    top: 0;
+    
+}
+
+
+.menu{
+    z-index: 2;
+    background-color: var(--main-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    
+    transform: translateX(-100vw);
+    transition: all .5s;
+}
+
+.menu-open .menu{
+    transform: translateX(0vw);
+}
+
+.menu-open, .menu-open body{
+    overflow: hidden;
+
+}
+
+
+
 
 
 .menu__item{
@@ -8,7 +80,29 @@
     text-align: center;
     display: flex;
     justify-content: space-between; 
+
+    transform: translateX(-30px);
+    opacity: 0;
+    transition: all .3s ease;
 }
+
+.menu-open .menu__item{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.menu-open .menu__item:nth-child(N+1){transition-delay: .3s;}
+.menu-open .menu__item:nth-child(N+2){transition-delay: .35s;}
+.menu-open .menu__item:nth-child(N+3){transition-delay: .4s;}
+.menu-open .menu__item:nth-child(N+4){transition-delay: .45s;}
+.menu-open .menu__item:nth-child(N+5){transition-delay: .50s;}
+.menu-open .menu__item:nth-child(N+6){transition-delay: .55s;}
+.menu-open .menu__item:nth-child(N+7){transition-delay: .60s;}
+.menu-open .menu__item:nth-child(N+8){transition-delay: .65s;}
+.menu-open .menu__item:nth-child(N+9){transition-delay: .70s;}
+.menu-open .menu__item:nth-child(N+10){transition-delay: .75s;}
+
+
 
 .menu__other {
     column-count: 2;

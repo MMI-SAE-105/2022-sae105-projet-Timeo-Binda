@@ -1,10 +1,26 @@
-.header__div{
+.header{
     background-color: var(--menu-color);
     height: 73px;
     display: flex;
-    justify-content: space-between;
+    
     align-items: center;
 }
+
+
+
+
+
+.header__logo{
+   margin-top: 10%;
+   z-index: 2;
+}
+
+.header__langue {
+    margin: 2%;
+}
+
+
+
 
 .header__menuBtn{
     background: none;
@@ -14,12 +30,10 @@
     z-index: 2;
 }
 
-.header__logo{
-   margin-top: 10%;
-   z-index: 3;
+.header__div{
+    background-color: var(--menu-color);
+    height: 73px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.header__langue {
-    padding-right: 10px;
-}
-
