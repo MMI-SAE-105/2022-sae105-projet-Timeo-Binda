@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr"x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen">
 <head>
+    <link rel="stylesheet" href="../src/css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,110 +25,124 @@
       }
     </style>
 </head>
-<body>
+<body class="body" >
      
-    <header>
+    <header class="header">
         
-        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
-        class="header__menuBtn">
-            <img src="../public/img/icones/menu.svg" alt="icone Menu">
-        </button>
-        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms
+        <div class="header__div">
+            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
+            class="header__menuBtn">
+                <img src="../public/img/icones/menu.svg" alt="icone Menu">
+            </button>
+            <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms
 
-        class="menu">
-            <img src="../public/img/icones/cross.svg" alt="">
-            <ul>
-                <li><a href="CortlandtAlley.html"><img src="../public/img/icones/location.svg" alt="Icone Location">Cortland Alley</a></li>
-                <li><a href="StarWars.html"><img src="../public/img/icones/book.svg" alt="Icone livre">Star Wars</a></li>
-                <li><a href="BohemianRhapsody.html"><img src="../public/img/icones/music.svg" alt="Icone Music">Bohemian Rhapsody</a></li>
-                <li><a href="InglouriousBasterds.html"><img src="../public/img/icones/film.svg" alt="cone film">Inglourious Basterds</a></li>
-                <li><a href="Technologies.html"><img src="../public/img/icones/finger_crossed.svg" alt="Icone doigts croisés">Technologies</a></li>
-                <li><a href="MortDuCinema.html"><img src="../public/img/icones/afraid.svg" alt="icone effrayé">La Mort du Cinéma ?</a></li>
-            </ul>
-            <ul>
-                <li><a href="index.html"><img src="../public/img/icones/home.svg" alt="Icone accueil">Accueil</a></li>
-                <li><a href="AutresProjets.html"><img src="../public/img/icones/people.svg" alt="icones personnes">Autres Projets</a></li>
-                <li><a href="Contact.html"><img src="../public/img/icones/contact.svg" alt="icone lettre">Contact</a></li>
-                <li><a href="Glossaire.html"><img src="../public/img/icones/glossaire.svg" alt="Icone Glossaire">Glossaire</a></li>
-            </ul>
-        </nav>
-
-
-        <a href="/">
-            <img src="../public/img/icones/logo_site_header.svg" alt="Logo_Reverse_Footage">
-        </a>
+            class="menu">
+                <img class="cross" src="../public/img/icones/cross.svg" alt="">
+                <ul class="menu__articles">
+                    <li class="menu__item"><a href="/fr/CortlandtAlley.html"><img src="../public/img/icones/location.svg" alt="Icone Location">Cortland Alley</a></li>
+                    <li class="menu__item"><a href="/fr/StarWars.html"><img src="../public/img/icones/book.svg" alt="Icone livre">Star Wars</a></li>
+                    <li class="menu__item"><a href="/fr/BohemianRhapsody.html"><img src="../public/img/icones/music.svg" alt="Icone Music">Bohemian Rhapsody</a></li>
+                    <li class="menu__item"><a href="/fr/InglouriousBasterds.html"><img src="../public/img/icones/film.svg" alt="cone film">Inglourious Basterds</a></li>
+                    <li class="menu__item"><a href="/fr/Technologies.html"><img src="../public/img/icones/finger_crossed.svg" alt="Icone doigts croisés">Technologies</a></li>
+                    <li class="menu__item"><a href="/fr/MortDuCinema.html"><img src="../public/img/icones/afraid.svg" alt="icone effrayé">La Mort du Cinéma ?</a></li>
+                </ul>
+                <ul class="menu__other">
+                    <li class="menu__item menu__item--other"><a href="index.html"><img src="../public/img/icones/home.svg" alt="Icone accueil">Accueil</a></li>
+                    <li class="menu__item menu__item--other"><a href="/fr/AutresProjets.html"><img src="../public/img/icones/people.svg" alt="icones personnes">Autres Projets</a></li>
+                    <li class="menu__item menu__item--other"><a href="/fr/Contact.html"><img src="../public/img/icones/contact.svg" alt="icone lettre">Contact</a></li>
+                    <li class="menu__item menu__item--other"><a href="/fr/Glossaire.html"><img src="../public/img/icones/glossaire.svg" alt="Icone Glossaire">Glossaire</a></li>
+                </ul>
+            </nav>
 
 
-        <a href="En_Accueil.html">
-            <img src="../public/img/icones/langue_francais.svg" alt="Icone langue Fr">
-        </a>
+            <a class="header__logo" href="/">
+                <img src="../public/img/icones/logo_site_header.svg" alt="Logo_Reverse_Footage">
+            </a>
+
+
+            <a class="header__langue" href="en/En_Accueil.html">
+                <img src="../public/img/icones/langue_francais.svg" alt="Icone langue Fr">
+            </a>
+        </div>
     </header>
+
 
     
 
     <!-- Séparer par des span pour des tailles différentes  -->
     <main>
-        <h1>
-            Autres Projets
-        </h1>
-        <p>
-            Trouvez ci-dessous les autres projets du groupe de TP A1. 
-        </p>
-        <ul>
-            <a href="">
-                <li><span>As Time Flies</span> Dalil Hammachi</li>
-            </a>
-            <a href="">
-                <li><span>Back To Back</span>Gaspard Bondy</li>
-            </a>
-            <a href="">
-                <li><span>Dicta</span>Chloé Bizet</li>
-            </a>
-            <a href="https://discover-e.lucaschippaux.fr/">
-                <li><span>Discover-e</span>Lucas Chippaux</li>
-            </a>
-            <a href="">
-                <li><span>Jibun</span>Emilien Boucard</li>
-            </a>
-            <a href="https://minduploadingexe.lisa-cingolani.fr">
-                <li><span>Mind_Uploading.exe</span>Lisa Cingolani</li>
-            </a>
-            <a href="">
-                <li><span>Mon Nindo</span>Ayrton Chaves</li>
-            </a>
-            <a href="">
-                <li><span>Rake Over the Ashes</span>Alexis Bernard</li>
-            </a>
-            <a href="">
-                <li><span>Reminder</span>Lisa Bugnet</li>
-            </a>
-            <a href="">
-                <li><span>Sweet Old Times</span>Jaël Amemoutou</li>
-            </a>
-            <a href="">
-                <li><span>Tengu Road</span>Lucas Bardey</li>
-            </a>
-            <a href="">
-                <li><span>Timeproof Cybersoul</span>Zoe-Augustine Vicat</li>
-            </a>
-            <a href="">
-                <li><span>Wikipiece</span>Yannis Borel</li>
-            </a>
-      
-        </ul>
+        <section class="intro">
+            <h1 class="h1">
+                Autres Projets
+            </h1>
+            <p class="p">
+                Trouvez ci-dessous les autres projets du groupe de TP A1. 
+            </p>
+        </section>
+
+        <section class="liste" >
+            <ul>
+                <a class="liste__item" href="">
+                    <li class="p"><span class="liste__site">As Time Flies</span> Dalil Hammachi</li>
+                </a>
+                <a class="liste__item" href="">
+                    <li class="p"><span class="liste__site">Back To Back</span>Gaspard Bondy</li>
+                </a>
+                <a class="liste__item" href="">
+                    <li class="p"><span class="liste__site">Dicta</span>Chloé Bizet</li>
+                </a>
+                <a class="liste__item" href="https://discover-e.lucaschippaux.fr/">
+                    <li class="p"><span>Discover-e</span>Lucas Chippaux</li>
+                </a>
+                <a class="liste__item" href="">
+                    <li class="p"><span class="liste__site">Jibun</span>Emilien Boucard</li>
+                </a>
+                <a class="liste__item" href="https://minduploadingexe.lisa-cingolani.fr">
+                    <li class="p"><span class="liste__site">Mind_Uploading.exe</span>Lisa Cingolani</li>
+                </a>
+                <a class="liste__item" href="">
+                    <li class="p"><span class="liste__site">Mon Nindo</span>Ayrton Chaves</li>
+                </a>
+                <a class="liste__item" href="">
+                    <li class="p"><span class="liste__site">Rake Over the Ashes</span>Alexis Bernard</li>
+                </a>
+                <a class="liste__item" href="">
+                    <li class="p"><span class="liste__site">Reminder</span>Lisa Bugnet</li>
+                </a>
+                <a class="liste__item" href="">
+                    <li class="p"><span class="liste__site">Sweet Old Times</span>Jaël Amemoutou</li>
+                </a>
+                <a class="liste__item" href="">
+                    <li class="p"><span class="liste__site">Tengu Road</span>Lucas Bardey</li>
+                </a>
+                <a class="liste__item" href="">
+                    <li class="p"><span class="liste__site">Timeproof Cybersoul</span>Zoe-Augustine Vicat</li>
+                </a>
+                <a class="liste__item" href="">
+                    <li class="p"><span class="liste__site">Wikipiece</span>Yannis Borel</li>
+                </a>
+        
+            </ul>
+        </section>
     </main>
     
-    <footer>
-        Contact <a href="mailto:etudiant.tbinda@gmail.com">etudiant.tbinda@gmail.com</a>
-        <p>
+
+
+    <footer class="footer">
+        <a class="footer__mail" href="mailto:etudiant.tbinda@gmail.com"> <span class="footer__contact">Contact:</span> etudiant.tbinda@gmail.com</a> 
+
+        <p class="footer__explication">
             Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de montbéliard. 
         </p>
-        <p>
-            Timéo BINDA - TDA1
-        </p>
-        <img src="../public/img/icones/logo_mmi_negatif.svg" alt="Logo MMI Montbéliard">
-
-        
+        <div class="footer__bottom">
+            <p class="footer__nom">
+                Timéo BINDA - TDA1
+            </p>
+            
+            <a class="footer__logommi" href="http://mmimontbeliard.com/" target="_blank">
+                <img src="../public/img/icones/logo_mmi_negatif.svg" alt="Logo MMI Montbéliard">
+            </a>
+        </div>
     </footer>
      
 </body>

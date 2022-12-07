@@ -100,6 +100,24 @@ a:-webkit-any-link {
     margin: 0;
 }
 
+.liste{
+    margin-left: -10%;
+}
+
+.liste__item li{
+    list-style-type: none;
+    border: 2px solid var(--tonic-color);
+    background-color: var(--menu-color);
+    border-radius: 10px;
+    padding: 3%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.liste__site{
+    
+}
+
 
 
 
