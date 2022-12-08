@@ -1,9 +1,9 @@
 .nav-toggle{
     
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     position: absolute;
-    top: 2%;
+    top: 1.5%;
     right: 3%;
     display: flex;
     align-items: center;
@@ -17,19 +17,20 @@
     content: '';
     background-color: white;
     width: 100%;
-    height: 2px;
+    height: 4px;
     position: absolute;
     left: 0;
     transition: all .4s ease-in-out;
+    border-radius: 10px;
 }
 
 .nav-toggle-bar::before{
     
-    top: -10px;
+    top: -15px;
 }
 
 .nav-toggle-bar::after{
-    top: 10px;
+    top: 15px;
 }
 
 .menu-open .nav-toggle-bar{
@@ -65,7 +66,6 @@
 
 .menu-open, .menu-open body{
     overflow: hidden;
-
 }
 
 
@@ -73,14 +73,6 @@
 
 
 .menu__item{
-    background-color: var(--menu-color);
-    list-style-type: none;
-    border-radius: 10px;
-    margin: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between; 
-
     transform: translateX(-30px);
     opacity: 0;
     transition: all .3s ease;
@@ -96,26 +88,40 @@
 .menu-open .menu__item:nth-child(N+3){transition-delay: .4s;}
 .menu-open .menu__item:nth-child(N+4){transition-delay: .45s;}
 .menu-open .menu__item:nth-child(N+5){transition-delay: .50s;}
-.menu-open .menu__item:nth-child(N+6){transition-delay: .55s;}
-.menu-open .menu__item:nth-child(N+7){transition-delay: .60s;}
-.menu-open .menu__item:nth-child(N+8){transition-delay: .65s;}
-.menu-open .menu__item:nth-child(N+9){transition-delay: .70s;}
-.menu-open .menu__item:nth-child(N+10){transition-delay: .75s;}
 
 
 
-.menu__other {
-    column-count: 2;
-    width: 80%;
-    height: 100%;
+.top_line{
+    transform: translateX(-4vw);
+    margin-top: 20%;
 }
 
-.menu__item--other{  
+.middle_line{
+    transform: translateX(-15vw);
+    margin-top: 10%;
+}
+
+.menu__item{
+    display: flex;
+    width: 90%;
+    background-color: var(--menu-color);
+    border-radius: 10px;
+    margin-top: 4%;
+}
+
+.menu__other__l1{
+    margin-right: 10%;
     
-    width: 80%;
-    text-align: center;
+    
+    width: 40%;
 }
 
+.menu__other__l2{
+    margin-right: 10%;
+    
+    
+    width: 40%;
+}
 
 
 
