@@ -50,12 +50,11 @@
 .menu{
     z-index: 2;
     background-color: var(--main-color);
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    
     transform: translateX(-101vw);
     transition: all .5s;
 }
@@ -93,12 +92,11 @@
 
 .top_line{
     transform: translateX(-4vw);
-    margin-top: 18%;
+    margin-top: 17%;
 }
 
 .middle_line{
     transform: translateX(-15vw);
-    
 }
 
 .menu__item{
@@ -119,7 +117,9 @@
     box-shadow: 2px 2px 10px black;
 }
 
-
+.menu__other{
+    margin: 0;
+}
 .menu__other__l1{
     display: flex;
     flex-direction: row;
