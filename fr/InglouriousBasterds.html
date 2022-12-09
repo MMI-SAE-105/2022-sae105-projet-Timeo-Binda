@@ -66,25 +66,28 @@
 
     
     <main>
-        <img src="../public/img/Photos/Inglourious Basterds/inglourious_basterds_characters.webp" alt="personnages film">
-        <h2>
-            Crainte
-        </h2>
-        <img src="../public/img/icones/traits_article.svg" alt="traits">
-        <h1>
+        <div class="couv">
+            <img class="couv__img" src="../public/img/Photos/Inglourious Basterds/inglourious_basterds_characters.webp" alt="personnages film">
+            <h2 class="couv__title">
+                Crainte
+            </h2>
+        </div>
+
+        <img class="lines" src="../public/img/icones/traits_article.svg" alt="traits">
+        <h1 class="h1">
             La Mort du Cinéma
         </h1>
 
-        <p>
+        <p class="p">
             Inglourious Basterds est le 7 film du réalisateur Quentin Tarantino. Sorti en 2009, il est un succès commercial et critique. L’histoire se déroule pendant la seconde guerre mondiale et raconte la mise en place de 2 actions parallèles pour mettre fin au 3eme Reich. 
 
         </p>
 
-        <h3>
+        <h3 class="h3">
             Synopsis
         </h3>
 
-        <p>
+        <p class="p">
             En 1941, dans la France occupée, un colonel SS et ses hommes sont à la recherche de juifs dans une ferme familiale. Le colonel Landa réussit à faire avouer au chef de famille qu’il cache des juifs sous son plancher. Il ordonne alors à ses soldats de tirer à travers le plancher, tuant tous ceux se trouvant en dessous. Une fille Soshanna parvient néanmoins à s’échapper. 
             En parallèle, le lieutenant Américain Aldo Raine monte une équipe de soldats dans le but de se rendre en France pour effrayer les nazis en les scalpant et les tuant. 
             Nous retrouvons plus tard Shoshanna, gérante d’un cinéma parisien, sous un nom d’emprunt. Elle apprend que son cinéma va accueillir la première d’un film de propagande et que de nombreux dirigeants nazis seront présents. Elle va profiter de cette occasion pour venger sa famille. 
@@ -93,49 +96,121 @@
         </p>
 
 
-        <img src="../public/img/Photos/Inglourious Basterds/cinema_fire.webp" alt="cinéma en feu">
+        <img class="img" src="../public/img/Photos/Inglourious Basterds/cinema_fire.webp" alt="cinéma en feu">
 
-        <h4>
+        <h4 class="h4">
             Le cinéma en feu
         </h4>
 
-        <p>
+        <p class="p">
             Pendant ce temps, Aldo raine et ses soldats sont missionnés pour attaquer eux aussi la première du film. Ils prévoient de se fondre dans les invités et de faire exploser le cinéma, grâce à des explosifs à la cheville. 
             Les deux missions sont achevées avec de nombreux retournements de situation.  
         </p>
 
 
 
-        <h3>
+        <h3 class="h3">
             Succès
         </h3>
 
-        <p>
+        <p class="p">
             Le succès de ce film se trouve dans la réalisation et les dialogues, typiques de Tarantino, provoquant des moments de suspens insoutenables. Le film a reçu de nombreuses récompenses, dont huit aux oscars (notamment “meilleur film”, “meilleur réalisateur” et “meilleur scénario”). L’acteur Christoph Waltz à quant à lui remporté l’oscar du meilleur acteur pour son rôle du colonel Landa. En effet, c’est l’un des personnages clé du film. Son charisme maîtrisé et son sadisme continu font de lui un des méchants les plus cultes du cinéma.
         </p>
 
-        <img src="../public/img/Photos/Inglourious Basterds/landa.webp" alt="Colonel Landa">
+        <img class="img" src="../public/img/Photos/Inglourious Basterds/landa.webp" alt="Colonel Landa">
 
-        <h4>
+        <h4 class="h4">
             Colonel Landa 
         </h4>
 
-        <h3>
+        <h3 class="h3">
             Recommandation
         </h3>
 
-        <p>
+        <p class="p">
             Inglourious Basterds est selon moi, comme pour beaucoup, l’un des meilleurs films de Tarantino. Il est parmi les films à voir absolument et aura pour sûr, marqué ce début des années 2000.
             Je vous conseille, par ailleurs, d’autres films du même réalisateur, eux aussi pépites du cinéma.
         </p>
 
-        <h3>
+        <h3 class="h3">
             Du même réalisateur
         </h3>
 
-        <p>
-            #caroussel 
-        </p>
+        <div class="carrousel" x-data="{}">
+            <button @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">
+                <img src="../public/img/icones/arrow_circled_left.svg" alt="fleche gauche">
+            </button>
+            
+            <button @click="$refs.parent.scrollLeft += $refs.parent.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"> 
+                <img src="../public/img/icones/arrow_circled_right.svg" alt="fleche droite">
+            </button>
+
+            <div class="carrousel_parent-ecrans" x-ref="parent">
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <img class="card__img" src="../public/img/Photos/Inglourious Basterds/reservoir_dogs.webp" alt="image ecran 1">
+                        <figcaption class="card__title__car" >1992 - Reservoir Dogs</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel_ecran">
+                    <figure>
+                        <img class="card__img" src="../public/img/Photos/Inglourious Basterds/pulp_fiction.webp" alt="image ecran 2">
+                        <figcaption class="card__title__car" >1994 - Pulp Fiction</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel_ecran">
+                    <figure>
+                        <img class="card__img" src="../public/img/Photos/Inglourious Basterds/jackie_brown.webp" alt="image ecran 3">
+                        <figcaption class="card__title__car" >1997 - Jackie Brown</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-4" class="carrousel_ecran">
+                    <figure>
+                        <img class="card__img" src="../public/img/Photos/Inglourious Basterds/kill_bill.webp" alt="image ecran 4">
+                        <figcaption class="card__title__car" >2003 - Kill Bill </figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-5" class="carrousel_ecran">
+                    <figure>
+                        <img class="card__img" src="../public/img/Photos/Inglourious Basterds/kill_bill_2.webp" alt="image ecran 5">
+                        <figcaption class="card__title__car" >2004 - Kill Bill 2</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-6" class="carrousel_ecran">
+                    <figure>
+                        <img class="card__img" src="../public/img/Photos/Inglourious Basterds/death_proof.webp" alt="image ecran 6">
+                        <figcaption class="card__title__car" >2007 - Death Proof</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-7" class="carrousel_ecran">
+                    <figure>
+                        <img class="card__img" src="../public/img/Photos/Inglourious Basterds/inglourious_basterds.webp" alt="image ecran 7">
+                        <figcaption class="card__title__car" >2009 - Inglourious Basterds</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-8" class="carrousel_ecran">
+                    <figure>
+                        <img class="card__img" src="../public/img/Photos/Inglourious Basterds/django.webp" alt="image ecran 8">
+                        <figcaption class="card__title__car" >2012 - Django Unchained</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-9" class="carrousel_ecran">
+                    <figure>
+                        <img class="card__img" src="../public/img/Photos/Inglourious Basterds/hateful_height.webp" alt="image ecran 9">
+                        <figcaption class="card__title__car" >2015 - The Hateful Eight</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-10" class="carrousel_ecran">
+                    <figure>
+                        <img class="card__img" src="../public/img/Photos/Inglourious Basterds/ouatih.webp" alt="image ecran 10">
+                        <figcaption class="card__title__car" >2019 - Once  Upon a Time in Hollywood</figcaption>
+                    </figure>
+                </div>
+                
+                    </figure>
+                </div>
+            </div>
+        </div>
 
         
 
