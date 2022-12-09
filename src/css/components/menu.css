@@ -96,13 +96,11 @@
 
 
 
-.top_line{
-    transform: translateX(-4vw);
-    margin-top: 17%;
-}
+
 
 .middle_line{
     transform: translateX(-15vw);
+    width: 117%;
 }
 
 .menu__articles{
