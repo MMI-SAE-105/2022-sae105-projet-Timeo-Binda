@@ -10,26 +10,26 @@ a:-webkit-any-link {
     text-decoration: none;
 }
 
-
-
 .h1{
     color: var(--text-color);
-    margin-left: 5%;
-    margin-right: 5%;
-    
+    margin-inline: 5%;
     font-size: var(--heading-1);
 }
 
 .h2{
     color: var(--text-color);
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-inline: 5%;
+    
+}
+
+h4, .h4{
+    color: var(--text-color);
+    text-align: center;
 }
 
 .p{
     color: var(--text-color);
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-inline:5%;
     font-family: 'Rubik', sans-serif;
     font-size: var(--body-1);
 }
@@ -51,7 +51,7 @@ a:-webkit-any-link {
     margin-top: 5%;
     margin-bottom: 5%;
     border-style: none;
-    border-radius: 10px;
+    border-radius: 20px;
     color: var(--text-color);
     font-family: 'Rubik', sans-serif;
     font-size: 30px;
@@ -78,6 +78,7 @@ a:-webkit-any-link {
     margin-top: 2%;
     margin-bottom: 2%;
     margin-inline: 10%;
+    color: var(--text-color);
 }
 
 .text_area{
@@ -92,6 +93,7 @@ a:-webkit-any-link {
     margin-top: 2%;
     margin-bottom: 2%;
     margin-inline: 10%;
+    color: var(--text-color);
 }
 
 .intro{
@@ -129,6 +131,26 @@ dd {
     padding: 2%;
 }
 
+
+.citation{
+    padding: 2%;
+    margin-inline: 5%;
+    border-radius: 10px;
+    border: 2px solid var(--tonic-color);
+    margin-bottom: 5%;
+}
+
+q{
+    font-style: italic;
+    color: var(--text-color);
+}
+
+.citation__author{
+    color: var(--text-color);
+    text-align: end;
+    margin: 0;
+    margin-top: 2%;
+}
 
 
 

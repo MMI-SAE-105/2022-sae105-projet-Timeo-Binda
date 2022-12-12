@@ -159,4 +159,5 @@ max-width width width
 
 .card__title__car{
     text-align: center;
+    color: var(--text-color);
 }
