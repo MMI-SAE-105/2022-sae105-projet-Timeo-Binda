@@ -100,7 +100,7 @@ max-width width width
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
-    margin-left: 5%;
+    margin-inline: 5%;
     background-color: var(--menu-color);
     border-radius: 5%;
     border: 2px solid var(--tonic-color);
@@ -131,12 +131,15 @@ max-width width width
         place-content: center;
         color: #fff;
       }
-      
+      .car__button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+
       .carrousel_btn-avant {
-        
+        margin-top: 2%;
         position: relative;
-        left: 0;
-        
         border: none;
         background: none;
         cursor: pointer;
@@ -145,9 +148,8 @@ max-width width width
       }
       
       .carrousel_btn-apres {
+        margin-top: 2%;
         position: relative;
-        right: 0;
-        
         border: none;
         background: none;
         cursor: pointer;
