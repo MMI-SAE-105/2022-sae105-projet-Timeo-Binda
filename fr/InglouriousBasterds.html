@@ -137,13 +137,7 @@
         </h3>
 
         <div class="carrousel" x-data="{}">
-            <button @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth/2" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">
-                <img src="../public/img/icones/arrow_circled_left.svg" alt="fleche gauche">
-            </button>
             
-            <button @click="$refs.parent.scrollLeft += $refs.parent.clientWidth/2" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"> 
-                <img src="../public/img/icones/arrow_circled_right.svg" alt="fleche droite">
-            </button>
 
             <div class="carrousel_parent-ecrans" x-ref="parent">
                 <div id="ecran-1" class="carrousel_ecran">
@@ -209,6 +203,13 @@
                 
                     </figure>
                 </div>
+                <button @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth/2" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">
+                <img src="../public/img/icones/arrow_circled_left.svg" alt="fleche gauche">
+            </button>
+            
+            <button @click="$refs.parent.scrollLeft += $refs.parent.clientWidth/2" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"> 
+                <img src="../public/img/icones/arrow_circled_right.svg" alt="fleche droite">
+            </button>
             </div>
         </div>
 

@@ -133,11 +133,26 @@ max-width width width
       }
       
       .carrousel_btn-avant {
+        
+        position: relative;
         left: 0;
+        
+        border: none;
+        background: none;
+        cursor: pointer;
+        width: 70px;
+        height: auto;
       }
       
       .carrousel_btn-apres {
+        position: relative;
         right: 0;
+        
+        border: none;
+        background: none;
+        cursor: pointer;
+        width: 70px;
+        height: auto;
       }
 
 .card__title__car{
