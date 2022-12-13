@@ -27,41 +27,50 @@
 </head>
 <body class="body">
      
-    <header class="header" >
+    <header class="header">
+        <a class="header__langue" href="en/En_Accueil.html">
+            <img src="../public/img/icones/langue_francais.svg" alt="Icone langue Fr">
+        </a>
         
-        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
-        class="header__menuBtn">
-            <img src="../public/img/icones/menu.svg" alt="icone Menu">
-        </button>
-        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms
+        <a class="header__logo" href="/">
+            <img src="../public/img/icones/logo_site_header.svg" alt="Logo_Reverse_Footage">
+        </a>
 
-        class="menu">
-            <img src="../public/img/icones/cross.svg" alt="">
-            <ul>
-                <li><a href="CortlandtAlley.html"><img src="../public/img/icones/location.svg" alt="Icone Location">Cortland Alley</a></li>
-                <li><a href="StarWars.html"><img src="../public/img/icones/book.svg" alt="Icone livre">Star Wars</a></li>
-                <li><a href="BohemianRhapsody.html"><img src="../public/img/icones/music.svg" alt="Icone Music">Bohemian Rhapsody</a></li>
-                <li><a href="InglouriousBasterds.html"><img src="../public/img/icones/film.svg" alt="cone film">Inglourious Basterds</a></li>
-                <li><a href="Technologies.html"><img src="../public/img/icones/finger_crossed.svg" alt="Icone doigts croisés">Technologies</a></li>
-                <li><a href="MortDuCinema.html"><img src="../public/img/icones/afraid.svg" alt="icone effrayé">La Mort du Cinéma ?</a></li>
+        <div class="nav-toggle" onclick="document.documentElement.classList.toggle('menu-open')">
+            <div class="nav-toggle-bar"></div>
+        </div>
+        <nav class="menu">
+            
+            
+            <ul class="menu__articles">
+                <li class="menu__item"><a href="/fr/CortlandtAlley.html"><img src="../../public/img/icones/location.svg" alt="Icone Location">Cortland Alley</a></li>
+                <li class="menu__item"><a href="/fr/StarWars.html"><img src="../public/img/icones/book.svg" alt="Icone livre">Star Wars</a></li>
+                <li class="menu__item"><a href="/fr/BohemianRhapsody.html"><img src="../public/img/icones/music.svg" alt="Icone Music">Bohemian Rhapsody</a></li>
+                <li class="menu__item"><a href="/fr/InglouriousBasterds.html"><img src="../public/img/icones/film.svg" alt="cone film">Inglourious Basterds</a></li>
+                <li class="menu__item"><a href="/fr/Technologies.html"><img src="../public/img/icones/finger_crossed.svg" alt="Icone doigts croisés">Technologies</a></li>
+                <li class="menu__item"><a href="/fr/MortDuCinema.html"><img src="../public/img/icones/afraid.svg" alt="icone effrayé">La Mort du Cinéma ?</a></li>
             </ul>
-            <ul>
-                <li><a href="index.html"><img src="../public/img/icones/home.svg" alt="Icone accueil">Accueil</a></li>
-                <li><a href="AutresProjets.html"><img src="../public/img/icones/people.svg" alt="icones personnes">Autres Projets</a></li>
-                <li><a href="Contact.html"><img src="../public/img/icones/contact.svg" alt="icone lettre">Contact</a></li>
-                <li><a href="Glossaire.html"><img src="../public/img/icones/glossaire.svg" alt="Icone Glossaire">Glossaire</a></li>
+
+            <ul class="menu__other">
+
+                <img class="middle_line" src="../public/img/icones/trait_menu.svg" alt="trait">
+
+                <div class="menu__other__l1">
+                    <li class="menu__item menu__item--other"><a href="index.html"><img src="../public/img/icones/home.svg" alt="Icone accueil">Accueil</a></li>
+                    <li class="menu__item menu__item--other"><a href="/fr/AutresProjets.html"><img src="../public/img/icones/people.svg" alt="icones personnes">Autres Projets</a></li>
+                </div>
+
+                
+
+                <div class="menu__other__l2">
+                    <li class="menu__item menu__item--other"><a href="/fr/Contact.html"><img src="../public/img/icones/contact.svg" alt="icone lettre">Contact</a></li>
+                    <li class="menu__item menu__item--other"><a href="/fr/Glossaire.html"><img src="../public/img/icones/glossaire.svg" alt="Icone Glossaire">Glossaire</a></li>
+                </div>
             </ul>
         </nav>
 
 
-        <a href="/">
-            <img src="../public/img/icones/logo_site_header.svg" alt="Logo_Reverse_Footage">
-        </a>
-
-
-        <a href="En_Accueil.html">
-            <img src="../public/img/icones/langue_francais.svg" alt="Icone langue Fr">
-        </a>
+        
     </header>
 
     
@@ -83,9 +92,9 @@
 
         </p>
 
-        <h3 class="h3">
+        <h2 class="h2">
             Synopsis
-        </h3>
+        </h2>
 
         <p class="p">
             En 1941, dans la France occupée, un colonel SS et ses hommes sont à la recherche de juifs dans une ferme familiale. Le colonel Landa réussit à faire avouer au chef de famille qu’il cache des juifs sous son plancher. Il ordonne alors à ses soldats de tirer à travers le plancher, tuant tous ceux se trouvant en dessous. Une fille Soshanna parvient néanmoins à s’échapper. 
@@ -109,9 +118,9 @@
 
 
 
-        <h3 class="h3">
+        <h2 class="h2">
             Succès
-        </h3>
+        </h2>
 
         <p class="p">
             Le succès de ce film se trouve dans la réalisation et les dialogues, typiques de Tarantino, provoquant des moments de suspens insoutenables. Le film a reçu de nombreuses récompenses, dont huit aux oscars (notamment “meilleur film”, “meilleur réalisateur” et “meilleur scénario”). L’acteur Christoph Waltz à quant à lui remporté l’oscar du meilleur acteur pour son rôle du colonel Landa. En effet, c’est l’un des personnages clé du film. Son charisme maîtrisé et son sadisme continu font de lui un des méchants les plus cultes du cinéma.
@@ -123,18 +132,18 @@
             Colonel Landa 
         </h4>
 
-        <h3 class="h3">
+        <h2 class="h2">
             Recommandation
-        </h3>
+        </h2>
 
         <p class="p">
             Inglourious Basterds est selon moi, comme pour beaucoup, l’un des meilleurs films de Tarantino. Il est parmi les films à voir absolument et aura pour sûr, marqué ce début des années 2000.
             Je vous conseille, par ailleurs, d’autres films du même réalisateur, eux aussi pépites du cinéma.
         </p>
 
-        <h3 class="h3">
+        <h2 class="h2">
             Du même réalisateur
-        </h3>
+        </h2>
 
         <div class="carrousel" x-data="{}">
             

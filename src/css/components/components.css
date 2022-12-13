@@ -22,7 +22,7 @@
     width: 100%;
 }
 
-.card__title .card__title__car{
+.card__title, .card__title__car{
     text-decoration: none;
     color: var(--text-color);
     margin: 0%;
@@ -67,23 +67,19 @@
     border-bottom-right-radius: 30px;
     border-top-right-radius: 30px;
     width: 25%;
-    padding-right: 25%;
+    padding-right: 30%;
     
 
 }
 
 
-/* en vrac :
-100% 100% 100% 0 auto border-box box-sizing 
-display height flex flex none margin 
-max-width width width
-*/ 
+
 
 * {
     box-sizing: border-box;/* change le box model */
     }
     img {
-      max-width: 100%;
+      
       height: auto;
     }
 .carrousel_parent-ecrans {
