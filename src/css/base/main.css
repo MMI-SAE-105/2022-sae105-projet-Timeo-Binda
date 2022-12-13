@@ -11,6 +11,7 @@ a:-webkit-any-link {
 }
 
 .h1{
+    margin: 0;
     color: var(--text-color);
     margin-inline: 5%;
     font-size: var(--heading-1);
@@ -23,8 +24,10 @@ a:-webkit-any-link {
 }
 
 h4, .h4{
+    margin: 0;
     color: var(--text-color);
     text-align: center;
+    margin-inline: 10%;
 }
 
 .p{
@@ -62,7 +65,6 @@ h4, .h4{
 }
 
 .send:hover {
-    
     text-decoration: underline;
 }
 

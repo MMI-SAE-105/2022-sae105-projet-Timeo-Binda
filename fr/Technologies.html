@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technologies</title>
     <link rel="icon" href="public/img/icones/logo_reverse_footage_noir.svg">
+    <link rel="stylesheet" href="../src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
     <style>
       .menu {
@@ -24,106 +25,112 @@
       }
     </style>
 </head>
-<body>
-     
-    <header>
+
+<body class="body">
+    <header class="header">
+        <a class="header__langue" href="en/En_Accueil.html">
+            <img src="../public/img/icones/langue_francais.svg" alt="Icone langue Fr">
+        </a>
         
-        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
-        class="header__menuBtn">
-            <img src="../public/img/icones/menu.svg" alt="icone Menu">
-        </button>
-        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms
-
-        class="menu">
-            <img src="../public/img/icones/cross.svg" alt="">
-            <ul>
-                <li><a href="CortlandtAlley.html"><img src="../public/img/icones/location.svg" alt="Icone Location">Cortland Alley</a></li>
-                <li><a href="StarWars.html"><img src="../public/img/icones/book.svg" alt="Icone livre">Star Wars</a></li>
-                <li><a href="BohemianRhapsody.html"><img src="../public/img/icones/music.svg" alt="Icone Music">Bohemian Rhapsody</a></li>
-                <li><a href="InglouriousBasterds.html"><img src="../public/img/icones/film.svg" alt="cone film">Inglourious Basterds</a></li>
-                <li><a href="Technologies.html"><img src="../public/img/icones/finger_crossed.svg" alt="Icone doigts croisés">Technologies</a></li>
-                <li><a href="MortDuCinema.html"><img src="../public/img/icones/afraid.svg" alt="icone effrayé">La Mort du Cinéma ?</a></li>
-            </ul>
-            <ul>
-                <li><a href="index.html"><img src="../public/img/icones/home.svg" alt="Icone accueil">Accueil</a></li>
-                <li><a href="AutresProjets.html"><img src="../public/img/icones/people.svg" alt="icones personnes">Autres Projets</a></li>
-                <li><a href="Contact.html"><img src="../public/img/icones/contact.svg" alt="icone lettre">Contact</a></li>
-                <li><a href="Glossaire.html"><img src="../public/img/icones/glossaire.svg" alt="Icone Glossaire">Glossaire</a></li>
-            </ul>
-        </nav>
-
-
-        <a href="/">
+        <a class="header__logo" href="/">
             <img src="../public/img/icones/logo_site_header.svg" alt="Logo_Reverse_Footage">
         </a>
 
+        <div class="nav-toggle" onclick="document.documentElement.classList.toggle('menu-open')">
+            <div class="nav-toggle-bar"></div>
+        </div>
+        <nav class="menu">
+            
+            
+            <ul class="menu__articles">
+                <li class="menu__item"><a href="/fr/CortlandtAlley.html"><img src="../../public/img/icones/location.svg" alt="Icone Location">Cortland Alley</a></li>
+                <li class="menu__item"><a href="/fr/StarWars.html"><img src="../public/img/icones/book.svg" alt="Icone livre">Star Wars</a></li>
+                <li class="menu__item"><a href="/fr/BohemianRhapsody.html"><img src="../public/img/icones/music.svg" alt="Icone Music">Bohemian Rhapsody</a></li>
+                <li class="menu__item"><a href="/fr/InglouriousBasterds.html"><img src="../public/img/icones/film.svg" alt="cone film">Inglourious Basterds</a></li>
+                <li class="menu__item"><a href="/fr/Technologies.html"><img src="../public/img/icones/finger_crossed.svg" alt="Icone doigts croisés">Technologies</a></li>
+                <li class="menu__item"><a href="/fr/MortDuCinema.html"><img src="../public/img/icones/afraid.svg" alt="icone effrayé">La Mort du Cinéma ?</a></li>
+            </ul>
 
-        <a href="En_Accueil.html">
-            <img src="../public/img/icones/langue_francais.svg" alt="Icone langue Fr">
-        </a>
+            <ul class="menu__other">
+
+                <img class="middle_line" src="../public/img/icones/trait_menu.svg" alt="trait">
+
+                <div class="menu__other__l1">
+                    <li class="menu__item menu__item--other"><a href="index.html"><img src="../public/img/icones/home.svg" alt="Icone accueil">Accueil</a></li>
+                    <li class="menu__item menu__item--other"><a href="/fr/AutresProjets.html"><img src="../public/img/icones/people.svg" alt="icones personnes">Autres Projets</a></li>
+                </div>
+
+                
+
+                <div class="menu__other__l2">
+                    <li class="menu__item menu__item--other"><a href="/fr/Contact.html"><img src="../public/img/icones/contact.svg" alt="icone lettre">Contact</a></li>
+                    <li class="menu__item menu__item--other"><a href="/fr/Glossaire.html"><img src="../public/img/icones/glossaire.svg" alt="Icone Glossaire">Glossaire</a></li>
+                </div>
+            </ul>
+        </nav>
     </header>
 
     
     <main>
-        <img src="../public/img/Photos/Techno/virtual_studio.webp" alt="Bohemian Rhapsody couverture">
-        <h2>
-            Espoir
-        </h2>
-        <img src="../public/img/icones/traits_article.svg" alt="traits">
-        <h1>
+        <div class="couv">
+            <img class="couv__img" src="../public/img/Photos/Techno/virtual_studio.webp" alt="Bohemian Rhapsody couverture">
+            <h2 class="couv__title">
+                Espoir
+            </h2>
+        </div>
+
+        <img class="lines" src="../public/img/icones/traits_article.svg" alt="traits">
+        <h1 class="h1">
             Les Technologies du Cinéma
         </h1>
 
-        <p>
+        <p class="p">
             Le cinéma est toujours à la pointe de la technologie, surtout pour les productions à gros budget. Avec de nouvelles manières pour créer des effets spéciaux et les rendre encore plus réels, pour une immersion de plus en plus parfaite. 
         </p>
 
-        <h3>
+        <h2 class="h2">
             Du Fond Vert...
-        </h3>
+        </h2>
 
-        <p>
+        <p class="p">
             La technologie du moment est très clairement les studios virtuels. 
             Pour incruster des personnages dans des décors numériquement, la technique la plus utilisée encore aujourd’hui, est le “fond vert”. L’idée est de placer le comédien devant un fond totalement vert, souvent un tissu tendu. Ensuite, en post-production, on supprime, à l’aide d’un logiciel toute la couleur verte, pour la rendre transparente. Puis, on remplace ce fond transparent par le fond dans lequel nous souhaitons incruster notre personnage. Il y a souvent une étape de tracking, pour rendre le fond dynamique. La plus grande partie du travail se fait donc après le tournage.
             
         </p>
-        <img src="../public/img/Photos/Techno/green_screen_bohemian_rhapsody.webp" alt="Fond vert">
 
-        <h4>
+        <img class="img" src="../public/img/Photos/Techno/green_screen_bohemian_rhapsody.webp" alt="Fond vert">
+
+        <h4 class="h4">
             Fond Vert utilisé pour le film Bohemian Rhapsody
         </h4>
 
-
-
-        <h3>
+        <h2 class="h2">
             ...Au Studio Virtuel
-        </h3>
+        </h2>
 
-        <p>
+        <p class="p">
             Avec la technologie du studio virtuel, il faut d’abord créer les décors dans un logiciel de 3D. Ces logiciels sont de plus en plus évolués et permettent aujourd’hui de créer des textures très réalistes. Ces environnements 3D sont ensuite diffusés sur des écrans géants, de plusieurs mètres. L’acteur y est placé devant. La nouveauté derrière ce système est que la/les caméra(s) est détecté par des capteurs sur le plateau, ce qui permet de connaître sont emplacement précis, ainsi que son angle de vue. Grâce à cela, le logiciel calcule en temps réel la partie du décor 3D à afficher sur l’écran. Avec se système, la partie conséquente du travail se trouve en préproduction, pour créer le décor, mais cela facilite toutes les étapes pendant le tournage, et après. 
             Cette technologie est néanmoins nouvelle, et coûte encore cher, mais parfois moins que de payer toute la post-production, si il y a vraiment beaucoup de scène à incruster. 
         </p>
 
         
-        <img src="../public/img/Photos/Techno/behind_the_scene_mandalorian.webp" alt="Studio virtuel Mandalorian ">
+        <img class="img" src="../public/img/Photos/Techno/behind_the_scene_mandalorian.webp" alt="Studio virtuel Mandalorian ">
 
-        <h4>
+        <h4 class="h4">
             Tournage de la série The Mandalorian en studio virtuel 
         </h4>
 
-        <h3>
+        <h2 class="h2">
             Utilisations
-        </h3>
+        </h2>
         
-        <p>
+        <p class="p">
             C’est le cas de la série The Mandalorian (2019), qui n’utilise pour ainsi dire que très peu de décors réels. Ou encore le clip musical de la chanson Black Summer des Red Hot Chilli Peppers, entièrement réalisée avec cette technologie.
         </p>
 
-        <p>
+        <p class="p">
             J’espère que de nombreuses technologies comme celle-ci viendront rendre le cinéma encore plus immersif qu’il ne l’est déjà. 
         </p>
-
-       
     </main>
     
     <footer>
