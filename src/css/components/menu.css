@@ -46,7 +46,6 @@
     
 }
 
-
 .menu{
     z-index: 2;
     background-color: var(--main-color);
@@ -66,10 +65,6 @@
 .menu-open, .menu-open body{
     overflow: hidden;
 }
-
-
-
-
 
 .menu__item{
     transform: translateX(-30px);
@@ -94,10 +89,6 @@
 .menu-open .menu__item:nth-child(N+4){transition-delay: .45s;}
 .menu-open .menu__item:nth-child(N+5){transition-delay: .50s;}
 
-
-
-
-
 .middle_line{
     transform: translateX(-15vw);
     width: 100%;
@@ -105,7 +96,6 @@
 
 .menu__articles{
     padding-top: 8%;
-    
 }
 
 .menu__item--other{
