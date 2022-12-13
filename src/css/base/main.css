@@ -10,7 +10,7 @@ a:-webkit-any-link {
     text-decoration: none;
 }
 
-.h1{
+.h1,.h1__bis{
     margin: 0;
     color: var(--text-color);
     margin-inline: 5%;
@@ -35,6 +35,10 @@ h4, .h4{
     margin-inline:5%;
     font-family: 'Rubik', sans-serif;
     font-size: var(--body-1);
+}
+
+.h1__bis{
+    margin-top: 5%;
 }
 
 .langue__titre{
