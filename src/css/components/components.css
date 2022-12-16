@@ -157,3 +157,24 @@
     text-align: center;
     color: var(--text-color);
 }
+
+.frise{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.frise__title{
+  color: var(--text-color);
+}
+.frise__image{
+  width: 90%;
+  border-radius: 10px;
+  border: 2px solid var(--tonic-color);
+  
+}
+
+.frise__text{
+  margin-right: 10%;
+  color: var(--text-color);
+}
