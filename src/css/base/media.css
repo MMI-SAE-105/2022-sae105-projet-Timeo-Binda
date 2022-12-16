@@ -42,8 +42,6 @@ video{
     width: 90%;
     height: auto;
     margin: 5%;
-    
-    
     border-radius: 10px;
     border: 2px solid var(--tonic-color);
 }

@@ -3,15 +3,11 @@
     flex-direction: column;
     background-color: var(--menu-color);
     padding: 5%;
-    
-    
-}
-
-.footer__contact{
-   
     color: var(--text-color);
     
 }
+
+
 
 .footer__mail{
     margin: 0;
@@ -19,18 +15,13 @@
 
 }
 
-.footer__explication{
-    color: var(--text-color);
-    
+
+.footer__bottom{
+    display: flex;
+    flex-direction: raw;
+    justify-content: space-between;
 }
 
 
-.footer__nom{
-    text-align: center;
-    color: var(--text-color);
-}
 
-.footer__logommi{
-    display: block;
-    text-align: right;
-}
+
