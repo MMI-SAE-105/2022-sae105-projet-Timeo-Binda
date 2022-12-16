@@ -39,10 +39,11 @@
 }
 
 video{
-    width: 100%;
+    width: 90%;
     height: auto;
-    id="example-player";
-    controls;
-    muted;
-            class="cld-video-player cld-video-player-skin-dark"
+    margin: 5%;
+    
+    
+    border-radius: 10px;
+    border: 2px solid var(--tonic-color);
 }
