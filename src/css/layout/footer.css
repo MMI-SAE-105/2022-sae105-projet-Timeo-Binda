@@ -4,6 +4,7 @@
     background-color: var(--menu-color);
     padding: 5%;
     color: var(--text-color);
+    border-top: 2px solid var(--tonic-color);
     
 }
 
