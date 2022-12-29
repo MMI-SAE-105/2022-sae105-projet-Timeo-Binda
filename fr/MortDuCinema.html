@@ -6,19 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La mort du Cinéma</title>
     <link rel="icon" href="../public/img/icones/logo_reverse_footage_noir.svg">
+    <link rel="stylesheet" href="../src/css/style.css">
 </head>
-<body>
+<body class="body">
      
     <header class="header">
+        <a class="header__langue" href="en/En_Accueil.html">
+            <img src="../public/img/icones/langue_francais.svg" alt="Icone langue Fr">
+        </a>
         
-        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
-        class="header__menuBtn">
-            <img src="../public/img/icones/menu.svg" alt="icone Menu">
-        </button>
-        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms
+        <a class="header__logo" href="/">
+            <img src="../public/img/icones/logo_site_header.svg" alt="Logo_Reverse_Footage">
+        </a>
 
-        class="menu">
-            <img class="cross" src="../public/img/icones/cross.svg" alt="croix">
+        <div class="nav-toggle" onclick="document.documentElement.classList.toggle('menu-open')">
+            <div class="nav-toggle-bar"></div>
+        </div>
+        <nav class="menu">
+            
+            
             <ul class="menu__articles">
                 <li class="menu__item"><a href="/fr/CortlandtAlley.html"><img src="../../public/img/icones/location.svg" alt="Icone Location">Cortland Alley</a></li>
                 <li class="menu__item"><a href="/fr/StarWars.html"><img src="../public/img/icones/book.svg" alt="Icone livre">Star Wars</a></li>
@@ -27,88 +33,97 @@
                 <li class="menu__item"><a href="/fr/Technologies.html"><img src="../public/img/icones/finger_crossed.svg" alt="Icone doigts croisés">Technologies</a></li>
                 <li class="menu__item"><a href="/fr/MortDuCinema.html"><img src="../public/img/icones/afraid.svg" alt="icone effrayé">La Mort du Cinéma ?</a></li>
             </ul>
+
             <ul class="menu__other">
-                <li class="menu__item menu__item--other"><a href="index.html"><img src="../public/img/icones/home.svg" alt="Icone accueil">Accueil</a></li>
-                <li class="menu__item menu__item--other"><a href="/fr/AutresProjets.html"><img src="../public/img/icones/people.svg" alt="icones personnes">Autres Projets</a></li>
-                <li class="menu__item menu__item--other"><a href="/fr/Contact.html"><img src="../public/img/icones/contact.svg" alt="icone lettre">Contact</a></li>
-                <li class="menu__item menu__item--other"><a href="/fr/Glossaire.html"><img src="../public/img/icones/glossaire.svg" alt="Icone Glossaire">Glossaire</a></li>
+
+                <img class="middle_line" src="../public/img/icones/trait_menu.svg" alt="trait">
+
+                <div class="menu__other__l1">
+                    <li class="menu__item menu__item--other"><a href="index.html"><img src="../public/img/icones/home.svg" alt="Icone accueil">Accueil</a></li>
+                    <li class="menu__item menu__item--other"><a href="/fr/AutresProjets.html"><img src="../public/img/icones/people.svg" alt="icones personnes">Autres Projets</a></li>
+                </div>
+
+                
+
+                <div class="menu__other__l2">
+                    <li class="menu__item menu__item--other"><a href="/fr/Contact.html"><img src="../public/img/icones/contact.svg" alt="icone lettre">Contact</a></li>
+                    <li class="menu__item menu__item--other"><a href="/fr/Glossaire.html"><img src="../public/img/icones/glossaire.svg" alt="Icone Glossaire">Glossaire</a></li>
+                </div>
             </ul>
         </nav>
 
 
-        <a class="header__logo" href="/">
-            <img src="../public/img/icones/logo_site_header.svg" alt="Logo_Reverse_Footage">
-        </a>
-
-
-        <a class="header__langue" href="en/En_Accueil.html">
-            <img src="../public/img/icones/langue_francais.svg" alt="Icone langue Fr">
-        </a>
+        
     </header>
 
     
     <main>
-        <img src="../public/img/Photos/La Mort du ciné/popcorn_renverse.webp" alt="Pop corn renversé">
-        <h2>
-            Crainte
-        </h2>
-        <img src="../public/img/icones/traits_article.svg" alt="traits">
-        <h1>
+        <div class="couv">
+            <img class="couv__img" src="../public/img/Photos/La Mort du ciné/popcorn_renverse.webp" alt="popcorn renverse">
+
+            <h2 class="couv__title">
+                Crainte
+            </h2>
+        </div>
+
+        <img class="lines" src="../public/img/icones/traits_article.svg" alt="traits">
+
+        <h1 class="h1">
             La Mort du Cinéma
         </h1>
 
-        <p>
+        <p class="p">
             Pour commencer je citerais l’inventeur du cinéma, Louis Lumière, qui peu après leur première, annonca:  “Le cinéma est une invention sans avenir”. Le cinema a en effet été remis en question de nombreuses fois, et encore de nos jours, au XXI siècle.
 
         </p>
 
-        <h3>
+        <h2 class="h2">
             Pas la première mort
-        </h3>
+        </h2>
 
-        <p>
+        <p class="p">
             En 1927, plusieurs critiques de cinéma clament sa mort, suite à son évolution, le rendant sonore. “Le cinématographe des frères lumière ne mérite plus son nom… Il est devenu un vulgaire phonographe à image.” 
             Aussi, après la seconde guerre mondiale, l’industrie cinématographique, qui fut pourtant la seconde plus importante française, risque de s’écrouler. L’Etat français taxe de manière trop conséquente les producteurs, ce qui les rend parfois difficilement viables.  
         </p>
 
-        <p>
+        <p class="p">
             De nos jours, ce sont principalement 2 causes qui peuvent nous laisser croire à une mort imminente du cinéma.
         </p>
 
-        <h3>
+        <h2 class="h2">
             Adieu la Caméra 
-        </h3>
+        </h2>
 
-        <p>
+        <p class="p">
             Premièrement, beaucoup de productions s’allègent. Si auparavant, il fallait plusieurs millions de dollars pour tourner un film à succès avec des équipements très onéreux. Aujourd'hui, de plus en plus de réalisateurs essaient de changer leurs méthodes de travail, en utilisant des caméras très spécifiques, que beaucoup d’entre nous possèdent déjà, les Iphones. C’est là le paradoxe, pour des films grand écran, des réalisateurs utilisent des caméras, enfin des smartphones, c’est à dire un outil qui n’est pas fait pour filmer. Certains sont plutôt performants dans ce domaine, mais ce n’est pas leur fonction première.   
         </p>
 
-        <p>
+        <p class="p">
             Le réalisateur Steven Soderbergh est un pionnier de ce domaine. Sa place n’est plus à prouver dans le milieu, il est le réalisateur de la trilogie Ocean, avec Matt Damon et George Clooney. Il à déjà réalisé 3 films avec un Iphone. C’est donc le genre de réalisateur qui s’intéresse plus à l’histoire raconté, qu’avec quel matériel elle est captée.
 
         </p>
 
-        <img src="../public/img/Photos/La Mort du ciné/film_iphone.webp" alt="Fond vert">
+        <img class="img" src="../public/img/Photos/La Mort du ciné/film_iphone.webp" alt="Fond vert">
 
-        <h4>
+        <h4 class="h4">
             Le Réalisateur Steven Soderbergh filmant son film “High Flying Bird” avec un Iphone 
         </h4>
 
-        <p>
+        <p class="p">
             Bien sûr, ce ne sont pas les caméras chères qui font qu’un film est notable ou non, mais cependant, elles participent au look de ce dernier. Et le public recherche tout de même une professionnalisation du film en se rendant au cinéma. Si le spectateur peut recréer lui-même le film, le cinéma professionnel n’a plus d'intérêt. 
         </p>
 
 
 
-        <h3>
+        <h2 class="h2">
             Bonjour Netflix
-        </h3>
+        </h2>
 
-        <p>
+        <p class="p">
             D'autre part, nous assistons à un changement de mode de consommation des films. De nos jours, les spectateurs ne se rendent plus, ou moins dans les salles aux fauteuils rouges, mais regardent les films depuis chez eux, sur des plateformes de streaming comme Netflix. Certains films ne sortent même plus au cinéma, mais directement sur Netflix. Néanmoins, cette consommation va peut-être impacter les salles de cinéma mais en rien la qualité du film. 
         </p>
 
-        <p>
+        <p class="p">
             Nous constatons donc, que le cinéma ne va peut-être pas mourir, mais il va bien changer. Les films ne seront plus tournés à la RED Monstro, mais simplement à l’Iphone. Ils seront regardés sur un écran plat, plutôt qu’un écran géant. Je n’espère qu’une chose, qu’il nous transmettre encore des émotions. 
         </p>
 
@@ -116,15 +131,21 @@
        
     </main>
     
-    <footer>
-        Contact <a href="mailto:etudiant.tbinda@gmail.com">etudiant.tbinda@gmail.com</a>
-        <p>
+    <footer class="footer">
+        <a class="footer__mail" href="mailto:etudiant.tbinda@gmail.com"> <span class="footer__contact">Contact:</span> etudiant.tbinda@gmail.com</a> 
+
+        <p class="footer__explication">
             Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de montbéliard. 
         </p>
-        <p>
-            Timéo BINDA - TDA1
-        </p>
-        <img src="../public/img/icones/logo_mmi_negatif.svg" alt="Logo MMI Montbéliard">
+        <div class="footer__bottom">
+            <p class="footer__nom">
+                Timéo BINDA - TDA1
+            </p>
+            
+            <a class="footer__logommi" href="http://mmimontbeliard.com/" target="_blank">
+                <img src="../public/img/icones/logo_mmi_negatif.svg" alt="Logo MMI Montbéliard">
+            </a>
+        </div>
     </footer>
      
 </body>
