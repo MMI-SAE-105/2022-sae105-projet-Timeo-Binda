@@ -16,6 +16,7 @@ a:-webkit-any-link {
     margin-inline: 5%;
     font-family: 'Rubik', sans-serif;
     font-size: var(--heading-1);
+    
 }
 
 .h2{
@@ -23,6 +24,7 @@ a:-webkit-any-link {
     margin-inline: 5%;
     font-family: 'Rubik', sans-serif;
     font-size: var(--heading-2);
+    
 }
 
 h4, .h4{
@@ -30,6 +32,9 @@ h4, .h4{
     color: var(--text-color);
     text-align: center;
     margin-inline: 10%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: var(--body-4);
+    font-weight: lighter;
 }
 
 .p{
@@ -48,10 +53,24 @@ h4, .h4{
     text-align: center;
 }
 
+
+
 .label{
     color: grey;
     margin-inline: 10%;
     font-family: 'Rubik', sans-serif;
+    font-size: var(--body-1);
+}
+
+.frise__title{
+    color: var(--text-color);
+    font-family: 'Rubik', sans-serif;
+    font-size: var(--heading-2);
+}
+
+.frise__text{
+    color: var(--text-color);
+    font-family: 'Titillium Web', sans-serif;
     font-size: var(--body-1);
 }
 
