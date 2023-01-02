@@ -73,6 +73,7 @@
     transform: translateX(0);
     opacity: 1;
     display: flex;
+    
     width: 90%;
     background-color: var(--menu-color);
     border-radius: 10px;
@@ -107,7 +108,8 @@
 .menu__other{
     display: flex;
     flex-direction: row;
-    margin-right: 10%;
+    
+    padding: 0;
 }
 .menu__item--other{
     box-shadow: 2px 2px 10px black;
