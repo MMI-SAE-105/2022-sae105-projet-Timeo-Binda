@@ -14,13 +14,15 @@ a:-webkit-any-link {
     margin: 0;
     color: var(--text-color);
     margin-inline: 5%;
+    font-family: 'Rubik', sans-serif;
     font-size: var(--heading-1);
 }
 
 .h2{
     color: var(--text-color);
     margin-inline: 5%;
-    
+    font-family: 'Rubik', sans-serif;
+    font-size: var(--heading-2);
 }
 
 h4, .h4{
@@ -33,7 +35,7 @@ h4, .h4{
 .p{
     color: var(--text-color);
     margin-inline:5%;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     font-size: var(--body-1);
 }
 
