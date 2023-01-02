@@ -12,42 +12,49 @@
 <body class="body">
      
     <header class="header">
+        <a class="header__langue" href="en/En_Accueil.html">
+            <img src="../public/img/icones/langue_francais.svg" alt="Icone langue Fr">
+        </a>
         
-        <div class="header__div">
-            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
-            class="header__menuBtn">
-                <img src="../public/img/icones/menu.svg" alt="icone Menu">
-            </button>
-            <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms
+        <a class="header__logo" href="/">
+            <img src="../public/img/icones/logo_site_header.svg" alt="Logo_Reverse_Footage">
+        </a>
 
-            class="menu">
-                <img class="cross" src="../public/img/icones/cross.svg" alt="">
-                <ul class="menu__articles">
-                    <li class="menu__item"><a href="/fr/CortlandtAlley.html"><img src="../public/img/icones/location.svg" alt="Icone Location">Cortland Alley</a></li>
-                    <li class="menu__item"><a href="/fr/StarWars.html"><img src="../public/img/icones/book.svg" alt="Icone livre">Star Wars</a></li>
-                    <li class="menu__item"><a href="/fr/BohemianRhapsody.html"><img src="../public/img/icones/music.svg" alt="Icone Music">Bohemian Rhapsody</a></li>
-                    <li class="menu__item"><a href="/fr/InglouriousBasterds.html"><img src="../public/img/icones/film.svg" alt="cone film">Inglourious Basterds</a></li>
-                    <li class="menu__item"><a href="/fr/Technologies.html"><img src="../public/img/icones/finger_crossed.svg" alt="Icone doigts croisés">Technologies</a></li>
-                    <li class="menu__item"><a href="/fr/MortDuCinema.html"><img src="../public/img/icones/afraid.svg" alt="icone effrayé">La Mort du Cinéma ?</a></li>
-                </ul>
-                <ul class="menu__other">
+        <div class="nav-toggle" onclick="document.documentElement.classList.toggle('menu-open')">
+            <div class="nav-toggle-bar"></div>
+        </div>
+        <nav class="menu">
+            
+            
+            <ul class="menu__articles">
+                <li class="menu__item"><a href="/fr/CortlandtAlley.html"><img src="../../public/img/icones/location.svg" alt="Icone Location">Cortland Alley</a></li>
+                <li class="menu__item"><a href="/fr/StarWars.html"><img src="../public/img/icones/book.svg" alt="Icone livre">Star Wars</a></li>
+                <li class="menu__item"><a href="/fr/BohemianRhapsody.html"><img src="../public/img/icones/music.svg" alt="Icone Music">Bohemian Rhapsody</a></li>
+                <li class="menu__item"><a href="/fr/InglouriousBasterds.html"><img src="../public/img/icones/film.svg" alt="cone film">Inglourious Basterds</a></li>
+                <li class="menu__item"><a href="/fr/Technologies.html"><img src="../public/img/icones/finger_crossed.svg" alt="Icone doigts croisés">Technologies</a></li>
+                <li class="menu__item"><a href="/fr/MortDuCinema.html"><img src="../public/img/icones/afraid.svg" alt="icone effrayé">La Mort du Cinéma ?</a></li>
+            </ul>
+
+            <ul class="menu__other">
+
+                <img class="middle_line" src="../public/img/icones/trait_menu.svg" alt="trait">
+
+                <div class="menu__other__l1">
                     <li class="menu__item menu__item--other"><a href="index.html"><img src="../public/img/icones/home.svg" alt="Icone accueil">Accueil</a></li>
                     <li class="menu__item menu__item--other"><a href="/fr/AutresProjets.html"><img src="../public/img/icones/people.svg" alt="icones personnes">Autres Projets</a></li>
+                </div>
+
+                
+
+                <div class="menu__other__l2">
                     <li class="menu__item menu__item--other"><a href="/fr/Contact.html"><img src="../public/img/icones/contact.svg" alt="icone lettre">Contact</a></li>
                     <li class="menu__item menu__item--other"><a href="/fr/Glossaire.html"><img src="../public/img/icones/glossaire.svg" alt="Icone Glossaire">Glossaire</a></li>
-                </ul>
-            </nav>
+                </div>
+            </ul>
+        </nav>
 
 
-            <a class="header__logo" href="/">
-                <img src="../public/img/icones/logo_site_header.svg" alt="Logo_Reverse_Footage">
-            </a>
-
-
-            <a class="header__langue" href="en/En_Accueil.html">
-                <img src="../public/img/icones/langue_francais.svg" alt="Icone langue Fr">
-            </a>
-        </div>
+        
     </header>
 
     

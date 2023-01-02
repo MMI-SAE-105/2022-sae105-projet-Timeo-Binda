@@ -92,7 +92,7 @@
 .menu-open .menu__item:nth-child(N+5){transition-delay: .50s;}
 
 .middle_line{
-    transform: translateX(-15vw);
+    transform: translateX(-5vw);
     width: 100%;
 }
 
