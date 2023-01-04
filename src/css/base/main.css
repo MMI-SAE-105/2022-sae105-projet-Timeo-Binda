@@ -24,6 +24,7 @@ a:-webkit-any-link {
     margin-inline: 5%;
     font-family: 'Rubik', sans-serif;
     font-size: var(--heading-2);
+    margin-bottom: 5px;
     
 }
 
@@ -35,6 +36,7 @@ h4, .h4{
     font-family: 'Titillium Web', sans-serif;
     font-size: var(--body-4);
     font-weight: lighter;
+    
 }
 
 .p{
@@ -42,6 +44,7 @@ h4, .h4{
     margin-inline:5%;
     font-family: 'Titillium Web', sans-serif;
     font-size: var(--body-1);
+    margin-top: 3px;
 }
 
 .h1__bis{
