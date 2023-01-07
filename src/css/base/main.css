@@ -54,6 +54,8 @@ h4, .h4{
 .langue__titre{
     color: var(--text-color);
     text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: var(--heading-1);
 }
 
 
