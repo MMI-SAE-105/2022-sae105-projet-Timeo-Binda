@@ -149,18 +149,24 @@ h4, .h4{
     box-shadow: 2px 2px 2px black;
 }
 
-dt {
+dt{
     color: var(--text-color);
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
+    margin-inline: 5%;
+    font-family: 'Rubik', sans-serif;
+    font-size: var(--heading-2);
+    font-weight: bold;
+    margin-top: 20px;
 }
 
 dd {
     color: var(--text-color);
     font-family: 'Rubik', sans-serif;
-    padding: 2%;
+    margin: 0;
+    margin-left: 10%;
+    margin-top: 1%;
 }
+
+
 
 
 .citation{
