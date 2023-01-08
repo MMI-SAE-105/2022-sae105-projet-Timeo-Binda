@@ -16,6 +16,7 @@
 .footer__mail{
     margin: 0;
     text-decoration: underline;
+    
 }
 
 .footer__contact{
@@ -31,18 +32,21 @@
 }
 
 .footer__logommi{
-    animation: breathing 4s ease-in-out infinite;
+    animation: breathing 3s ease-in-out infinite;
 }
 
 @keyframes breathing {
     0% {
-      transform: scale(1); /* échelle de l'image au départ */
+      transform: scale(1);
+       /* échelle de l'image au départ */
     }
     50% {
-      transform: scale(0.85); /* échelle de l'image à la moitié de l'animation */
+      transform: scale(0.85);
+       /* échelle de l'image à la moitié de l'animation */
     }
     100% {
       transform: scale(1); /* échelle de l'image à la fin de l'animation */
+      
     }
   }
   
